@@ -1,0 +1,133 @@
+/*css file written by Renee Chia-Lei Chen*/
+
+/*popup*/
+.bgCover { position:fixed; left:0; top:0; display:none; overflow:hidden }
+
+.overlayBox {
+  	display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+ /*   background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+.overlayContent {
+	 height: 100%;
+	 padding:0.6%; 
+}
+
+.iframeRound{
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:3%;
+	width:680px;
+	height:85%;
+	background-color: ;
+	border-radius:5px 5px 5px 5px;
+	border-style:hidden;
+    background-color: rgba(0,0,0,1);
+	}
+
+#iframe
+{	margin-top:1%;
+	height: 95%;
+	width:95%;
+	border-style: none;
+}
+
+.closeLink { font-family: Verdana, Geneva, sans-serif; font-style: italic; color:#F69; 
+}
+
+.launchLink { font-size: 12px; font-family: Verdana, Geneva, sans-serif; color: #EA2466; line-height: 17px; }
+
+.switchLanguage{ font-size: 12px; font-family: Verdana, Geneva, sans-serif; color: #EA2466; line-height: 17px;}
+/*popup ends*/
+
+/*background*/
+body { background-image: url(../_image/bg1.jpg); text-align: center; background-color: #000; background-attachment: fixed;  overflow-y:scroll;}
+
+/*texts*/
+.heading {  text-align: center; color: #EA2466; font-family: Verdana, Geneva, sans-serif; font-size: large; line-height: 30px; }
+
+.text {	color: #323232; font-family: Verdana, Geneva, sans-serif; font-size: 12px; line-height: 17px;}
+
+.pinkText { font-size: 12px; font-family: Verdana, Geneva, sans-serif; color: #EA2466; line-height: 17px; }
+
+#list {font-size: 14px; color: #F69;}
+
+/*big boxes*/
+.bigTable { /*the largest table that I put everything inside*/
+	border-radius:5px 5px 5px 5px;
+	background-color: #FFB8D0;  height: 0;
+	padding-top:2%;
+	padding-bottom:2%; /* start and end of boxes */ 
+	margin-left: auto;
+	margin-right: auto;
+	width:620px;
+  }
+.smallTable { /*bright inner table*/
+	border-radius:5px 5px 5px 5px;
+	background-color: #FFB8D0;
+	text-align: center;
+	width: 80%;
+	border: 0px;
+	background-image: url(../_image/littlebg.png); /*the transparency*/
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4%; /*between boxes*/
+	margin-bottom: 4%;
+	width: 531px;
+  }
+  
+.floatingTable {
+	border-radius:25px 25px 5px 5px;
+	bottom:0%;
+	display:block;
+	left: auto;
+	right: 0%;
+	position:fixed;
+	z-index:1;
+	background-color: #FFB8D0;
+	text-align: right;
+	margin-right: 0%;
+	margin-left: 0%;
+	width:auto;
+	background-image: url(../_image/littlebg.png); /*the transparency*/
+  }
+
+.footer
+{ 
+ padding-top:6%; padding-bottom:6%;
+  }
+.textBox /*small text boxes*/
+{	text-align:left;
+	margin:auto;
+	width:312px;
+	}
+
+/*js adds this when any blackboard is open*/
+body.noscroll
+{
+	overflow-y:hidden;
+	padding-right:17px;
+}
+
+/*standardized video sizing*/
+.videoSizing
+{
+	width:500px; 
+	height:281px;
+}
+
+.gallImageSizing
+{ 
+    text-decoration:none;
+	border-radius:5px 5px 5px 5px;
+	width:100%;
+	height:auto;
+}

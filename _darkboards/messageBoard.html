@@ -1,0 +1,48 @@
+﻿<!doctype html>
+<html>
+<head>
+<title>Message Board</title>
+<link rel="stylesheet" href="../_css/darkboard.css"/>
+<script src="../_js/jquery-1.2.6.min.js"></script>
+<script src="../_js/database.js"></script>
+<script src="../_js/zh_tw.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
+    </head>
+<body>
+
+
+<div class="printDiv"><p class="heading" id="messageBoard">Message Board</p>
+    <form>
+     <table class="messageBox" style="width:100%;" id="messageBox"><tr>
+    <td style="width:15%"><span class="text" id="nameText">Name:</span></td><td><input class="textBox" type="text" id='nameInput' oninput='saveValue()'/></td></tr>
+    <tr><td><span class="text" id="emailText">Email:</span></td><td><input class="textBox" type="text" id='emailInput' oninput='saveValue()'/></td></tr>
+    <tr><td><span class="text" id="msgText">Message:</span></td><td><textarea class="textArea" rows="10" cols="100" id="msgInput" oninput='saveValue()'></textarea></td></tr>
+    <tr><td><span class="text" id="privateText">Private:</span></td><td><input type="checkbox" id="privacyInput" onclick='saveValue()'/></td></tr>
+</table>   
+</form>
+<div id="toggleMessageLink" class="toggleMessageLink">
+    <a class='pinkText' href='javastript:void(0)' onclick='writeUserData()' id="saveText">save</a> <a class='pinkText' href='javastript:void(0)' onclick='openBox()' id="closeText">close</a>
+</div>
+    <!-- <a class="pinkText" href="javastript:void(0)" onclick="deleteData()">delete</a> //-->
+<div id="error">
+</div>
+<p id="readMessage" class="heading"></p>
+<p class="text" id="savedMessage"></p>
+<div id="messageTable"></div>
+
+  </div>
+</body>
+
+<script>
+$(document).ready(function() {
+    detectLang();
+
+    $('body').css("overflow-y", "auto");
+    runDatabase();
+});
+loadValue();
+</script>
+
+
+
+</html>

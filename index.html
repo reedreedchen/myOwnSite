@@ -1,0 +1,173 @@
+﻿<!--website written and maintained by Renee Chia-Lei Chen-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+<link href="favicon.ico" rel="shortcut icon" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=0.7, user-scalable=yes"/>
+<script type="text/javascript" src="_js/jquery-1.2.6.min.js"></script>
+<script type="text/javascript" src="_js/detectMobile.js"></script>
+<script type="text/javascript" src="_js/tableControl.js"></script>
+
+<link href="_css/style.css" rel="stylesheet" type="text/css "/>
+<title>Renee Home</title>
+</head>
+<body>
+<div class="overlayBox">
+	<div class="overlayContent"><div class="iframeRound">
+                    <iframe name="someFrame" id="iframe" src=""></iframe><br/>
+    <div id="closeLinkBackground" style="background-color: black; width:100%; margin:auto;"><a href="javascript:void(0)" id="closeLink" class="closeLink">Close</a></div>
+    </div>
+	</div>
+</div>
+<!--top ends-->
+
+<!--translate starts-->
+    <table class="floatingTable">
+        <tr>
+        <td><div align="center"><a href="javascript:void(0)" onclick="closeTab();" id="tab" class="pinkText" style="text-decoration: none">▼</a><br/><span class="text">[</span><a href="javascript:void(0)" class="switchLanguage" id="languageButton" lang="zh-Hant-TW">-> 繁體中文</a><span class="text">]</span><br/>
+<span class="text">[</span><a href="_darkboards/thisSite.html" target="someFrame" class="launchLink" id="thisSite" lang="zh-Hant-TW">Update Log</a><span class="text">]</span><br/>
+            <span class="text">[</span><a href="_darkboards/messageBoard.html" target="someFrame" class="launchLink" id="messageBoard" lang="zh-Hant-TW">Message Board</a><span class="text">]</span>
+        </div></td></tr></table>
+<!--translate ends-->
+
+<table class="bigTable">
+	<tr>
+	<td>
+    <table class="smallTable">
+		<tr>
+		<td  align="center">
+			<p class="heading">Renee Chen</p><p><span class="text">reedreedchen@gmail.com</span></p>
+			<div style="padding-top:9px; padding-bottom:13px;"><span class="text">[</span><a href="_darkboards/bio.html" target="someFrame" class="launchLink" id="bio">bio</a><span class="text"> |</span><span class="pinkText"> <a href="ResumeReneeChen_122616_5.pdf" target="someFrame" class="launchLink" id="resume">resume</a></span><span class="text"> | <a class="pinkText" id="demoReel" href="javascript:void(0)">demo reel</a> | <a  class="pinkText" id="gallery" href="javascript:void(0)">gallery</a> |<span class="pinkText"> <a id="animation" class="pinkText" href="javascript:void(0)">animation</a></span>]</span><br /></div>
+		    
+		  </td>
+	    </tr>
+	  </table>
+
+<!--Demo Reel starts-->
+<table class="smallTable" id="demoReelTable">
+            		<tr>
+          	 		<td  align="center" ><p id="demoReelTitle" class="heading">Demo Reel 2016</p>
+            		<iframe src="https://player.vimeo.com/video/167056845"  frameborder="0" class="videoSizing" id="video1" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen"></iframe>
+            		<div class="textBox"><p id="demoReelContent" class="text">Featured Projects: <i>Angel's Spirit</i> (2013), <i>Square Cat</i> (2013), <i>The Thing on My Belly</i> (2013), <i>Eye of Despair</i> (2014), <i>The Home Healthcare Project</i> (2016)</p>
+           		 </div></td>
+		</tr>
+	  </table>
+<!--Demo Reel ends-->  
+
+
+
+<!--Gallery Starts-->
+<table class="smallTable" id="galleryTable">
+        <tr>    
+	<td>
+    <div align="center">
+        <div class="textBox">
+<p class="heading" id="galleryTitle">Gallery</p>
+		  <p id="research" class="pinkText">Research
+		    </p>
+           
+		  <ul class="pinkText">
+  <li><span class="text">[</span><a href="javascript:void(0)" class="pinkText" onclick="window.open('https://etd.ohiolink.edu/pg_10?0::NO:10:P10_ACCESSION_NUM:osu1461270639', 'newwindow', 'width=700, height=500');return false;" id="research1"><i>Autoethnographic Research through Storytelling in Animation and Video Games</i></a><span class="text">] (OhioLink)</span></li> <li><span class="text">[</span><a href="javascript:void(0)" class="pinkText" onclick="window.open('http://www.nursingsimulation.org/article/S1876-1399(16)30013-5/abstract', 'newwindow', 'width=700, height=500');return false;" id="research2"><i>Gaming Simulation as Health and Safety Training for Home Health Care Workers</i></a><span class="text">] (Clinical Simulation and Learning)</span></li>
+		    </ul>
+            
+            <p id="scripting" class="pinkText">Scripting (Monobehavior & C#)
+		    </p>
+		  <ul class="pinkText">
+  <li><span class="text">[</span><a href="javascript:void(0)" class="pinkText" onclick="window.open('https://github.com/reedreedchen/homehealthcare?files=1', 'newwindow', 'width=700, height=500');return false;" id="scripting1"><i>Home Heathcare Project</i></a><span class="text" id="gitHub">] (GitHub Directory)</span></li>
+		    </ul>
+            
+		   
+		    <span class="pinkText" id="3DCreation">3D Creation</span>
+		    <ul class="pinkText">
+		                  <li><span class="text" id="3DCreation1">[Real Time Rendering-<i>Home Healthcare</i>]<br/>5 images</span><br/><a href="_darkboards/nioshRendering.html" target="someFrame" class="launchLink"><img class="gallImageSizing" src="_image/assess_render__0000.jpg" alt="Real Time Rendering-Home Healthcare" /></a></li>  
+  <li><span class="text" id="3DCreation2">[UI Design-<i>Home Healthcare</i>] 3 images</span><br /><a href="_darkboards/UI.html" target="someFrame" class="launchLink"><img class="gallImageSizing" src="_image/home1.jpg" alt="UI Design-Home Healthcare" /></a></li>
+  <li><span class="text" id="3DCreation3">[Environment-<i>Home Healthcare</i>] 8 images</span><br /><a href="_darkboards/nioshImages.html" target="someFrame" class="launchLink"><img class="gallImageSizing" alt="Environment-Home Healthcare" src="_image/home2.jpg" /></a></li>
+  <li><span class="text" id="3DCreation4">[Character-<i>Mom in the Box</i>] 14 images</span><a href="_darkboards/modelling.html" target="someFrame" class="launchLink"><img class="gallImageSizing" alt="Character-Mom in the Box" src="_image/mom01.jpg" /></a></li>
+		      
+
+		    </ul>
+             <span class="pinkText" id="storytelling">Storytelling & Storyboards </span>
+		    <ul class="pinkText">
+		       <li><span class="text">[<a href="unicorn_storyboard.html" target="someFrame" class="pinkText" onclick="MM_callJS('doOverlayOpen()')"></a></span><a href="_darkboards/squareCat.html" target="someFrame" class="launchLink" id="storytelling1"><i>Square Cat</i></a><span class="text">]</span></li>
+		       <li><span class="text">[<a href="_darkboards/unicorn_storyboard.html" target="someFrame" class="launchLink" id="storytelling2"><i>The Buriend Unicorn</i></a>]</span></li>
+		       <li><span class="text">[<a href="_darkboards/angel_storyboard.html" target="someFrame" class="launchLink" id="storytelling3"><i>Angel's Sprit</i></a>]</span></li>
+		       <li><span class="text">[<a href="_darkboards/eyeOfDespair.html" target="someFrame" class="launchLink" id="storytelling4"><i>Eye of Despair</i></a>]</span></li>
+		       <li><span class="text">[</span><a href="_darkboards/fallingStar.html" target="someFrame" class="launchLink" id="storytelling5"><i>The Falling Star</i></a><span class="text">]</span></li>
+		     </ul>
+<span class="pinkText" id="other">Other</span>
+<ul class="pinkText">
+  <li><span class="text">[<a href="_darkboards/forsaken.html" target="someFrame" class="launchLink" id="other1">Level Design-<i>Forsaken</i></a>]</span></li>
+  <li><span class="text">[<a href="_darkboards/two.html"target="someFrame" class="launchLink" id="other2">Data Visualization-<i>TWO</i></a>]</span></li>
+  <li><span class="text">[<a href="_darkboards/swss.html" target="someFrame" class="launchLink" id="other3">Flash, Graphic Design-<i>SWSS</i></a>] </span></li>
+  </ul>
+<p id="ani2AlignTag" align="left"><span class="text" id="cleckAni">*Check the</span>
+<a href="javascript:void(0)" class="pinkText" id="animation2"><span class="pinkText">animation</span></a><span class="text" id="cleckAni3"> tabs for more of my work not listed here.*</span></div></div>
+        
+	</td>
+	</tr>
+	</table>
+<!--Gallery endss-->
+<!--Animation starts-->
+<table class="smallTable" id="animationTable">
+   	    <tr>
+                <td>
+                	<p class="heading" id="animationTitle">Animation</p>
+                	
+               	  <iframe src="https://player.vimeo.com/video/75807833" frameborder="0" class="videoSizing" id="video2" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen"></iframe>
+                  	
+	<!--adventure comedy starts-->
+    
+  <div style="padding-top:4%; padding-bottom:2%"><span class="text" id="collaborative">Collaborative work with<br/>Xiaoshu Wang and Shumeng Zhao</span></div>
+                    	<div class="textBox" style="padding-bottom:2%">
+                          	<span class="pinkText" id="vimeo1"><i>Adventure Comedy</i> </span><span class="text" id="vimeo1_explain">expresses our imagination based off of the music written by Steve Samler. Following the  beat of the music, a girl starts a fantastic adventure.</span>
+                    	</div>
+                    
+	<!-- adventure comedy ends-->  
+                 <hr />
+	<!--the thing on my belly starts-->      
+                   <iframe src="https://player.vimeo.com/video/74166581" frameborder="0" class="videoSizing" id="video3" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen"></iframe>
+				  <div class="textBox"><p><span class="pinkText" id="vimeo2"><i>The Thing on My Belly</i></span><span class="text" id="vimeo2_explain">discusses identity issues many people are dealing with.</span></p></div>
+	<!--the thing on my belly ends--> 
+					<hr />
+	<!--square cat starts--> 
+					  <iframe  src="https://player.vimeo.com/video/64598636"   frameborder="0" class="videoSizing" id="video4" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen"></iframe><br>
+                    	<div class="textBox"><p><span class="pinkText" id="vimeo3"><i>Square Cat</i></span> <span class="text" id="vimeo3_explain">is a stylized 3D animation that addresses my thinking about feelings of isolation and not fitting in. The visual style is inspired by the game<i> Sushi Cat </i>(Armor Games). [</span><a href="_darkboards/squareCat.html" target="someFrame" class="launchLink" id="vimeo_board1">storyboard</a><span class="text">]<br /></span></p><!--square cat ends-->
+                </div>
+                   	  <hr />
+	<!--the buried unicorn starts-->   
+				  <iframe src="https://player.vimeo.com/video/58855208"frameborder="0" class="videoSizing" id="video5" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen"></iframe>
+						<div class="textBox"><p><span class="pinkText" id="vimeo4"><i>The Buried Unicorn</i> </span><span class="text" id="vimeo4_explain">demonstrates the stress of tuition in a humorous but slightly dark way. [</span><a href="_darkboards/unicorn_storyboard.html" target="someFrame" class="launchLink" id="vimeo_board2">storyboard</a><span class=text>]</span><!--the buried unicorn ends-->   
+                  </p></div>
+					  <hr />
+	<!--angel's spirit starts-->   
+                   	 <iframe src="https://player.vimeo.com/video/93031385" frameborder="0" class="videoSizing" id="video6" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen"></iframe><br>
+						<div class="textBox"><p><span class="pinkText" id="vimeo5"><i>Angel's Spirit</i></span><span class="text" id="vimeo5_explain"> explains my perspective about what causes people to become evil -- the environmental factors. I believe that not all individuals are to blame. This video demostrates the first part of the full story. [</span><a href="_darkboards/angel_storyboard.html" target="someFrame" class="launchLink" id="vimeo_board3">storyboard</a><span class="text">]</span></p></div>
+               
+       	  </td>
+        </tr>
+	  </table>
+<!--Animation ends-->
+
+<!--footer starts-->
+
+<table class="smallTable">
+        <tr>
+        <td class="footer">
+        	<span class="text">© Renee Chen 2013 - 2016</span></td>
+        </tr>
+      </table>
+
+<!--footer ends-->        
+	</td>
+	</tr>
+</table>
+
+<script type="text/javascript" src="_js/zh_tw.js"></script>
+<script type="text/javascript" src="_js/openWindow.js"></script>
+<script type="text/javascript">
+localStorage.setItem ('lang', currentLang);
+</script>
+</body>
+</html>

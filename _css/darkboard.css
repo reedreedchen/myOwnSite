@@ -1,0 +1,94 @@
+﻿.bgCover { position:fixed; left:0; top:0; display:none; overflow:hidden }
+.list {
+    font-size: 12px; font-family: Verdana, Geneva, sans-serif; color: #fff; line-height: 17px;
+}
+
+.floatLeft {
+	float: left;
+	margin: 0.5em;
+	padding: 0.5em;
+	font-family: Verdana, Geneva, sans-serif;
+}
+.bioDiv{
+	display:none;
+	}
+
+.floatRight {
+    float: right;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+.text {
+	text-align:left;
+	color: #fff;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	line-height: 17px;
+	}
+
+.pinkText { font-size: 12px; font-family: Verdana, Geneva, sans-serif; color: #FF6297; line-height: 17px; }
+
+body {
+	background-color: #000;
+	overflow-y:hidden;
+}
+
+.heading {
+	color: #FF6297;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: large;
+	text-align: center;
+	line-height: 30px;	
+}
+
+.imageSizing{
+	border-radius:5px 5px 5px 5px;
+	width:100%;
+	height:auto;
+	}
+.imageSizing_div{
+	margin:auto;
+	width:95%;
+	display:none;*/
+}
+.tinyImageSizing
+{ 
+	border-radius:5px 5px 5px 5px;
+	width:15%;
+	height:auto;
+}
+
+.textBox 
+{	
+    border-style: solid;
+	border-width: 1px;
+    width:100%;
+	border-color: #EA2466;
+
+	}
+
+.textArea
+{	
+    border: 1px solid #EA2466;
+	width:100%;
+	resize: none;
+}
+
+.printDiv
+{	
+    margin:auto;
+    width:90%;
+}
+
+.messageBox {
+    background-color:black;
+    display:block;
+    width:100%;
+}
+
+.toggleMessageLink {
+    margin:auto;
+    text-align:center
+
+}
