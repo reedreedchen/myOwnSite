@@ -150,16 +150,16 @@ function openBox() {
         document.getElementById('error').innerHTML = "";
         $('.messageBox').css('display', 'block');
         if (localStorage.getItem('lang') == "zh-Hant-TW")
-            document.getElementById('toggleMessageLink').innerHTML = "<a class='pinkText' href='javastript:void(0)' onclick='writeUserData()'>儲存</a> <a class='pinkText' href='javastript:void(0)' onclick='openBox()'>關閉</a>"
+            document.getElementById('toggleMessageLink').innerHTML = "<a class='pinkText' href='javascript:void(0)' onclick='writeUserData()'>儲存</a> <a class='pinkText' href='javascript:void(0)' onclick='openBox()'>關閉</a>"
         else
-            document.getElementById('toggleMessageLink').innerHTML = "<a class='pinkText' href='javastript:void(0)' onclick='writeUserData()'>save</a> <a class='pinkText' href='javastript:void(0)' onclick='openBox()'>close</a>"
+            document.getElementById('toggleMessageLink').innerHTML = "<a class='pinkText' href='javascript:void(0)' onclick='writeUserData()'>save</a> <a class='pinkText' href='javascript:void(0)' onclick='openBox()'>close</a>"
     }
     else if (document.getElementById('messageBox').style.display == 'block' || document.getElementById('messageBox').style.display == '') {
         $('.messageBox').css('display', 'none');
         if(localStorage.getItem('lang') == "zh-Hant-TW") 
-            document.getElementById('toggleMessageLink').innerHTML = "<a class='pinkText' href='javastript:void(0)' onclick='openBox()'>留言</a>";
+            document.getElementById('toggleMessageLink').innerHTML = "<a class='pinkText' href='javascript:void(0)' onclick='openBox()'>留言</a>";
         else
-            document.getElementById('toggleMessageLink').innerHTML = "<a class='pinkText' href='javastript:void(0)' onclick='openBox()'>leave message</a>";
+            document.getElementById('toggleMessageLink').innerHTML = "<a class='pinkText' href='javascript:void(0)' onclick='openBox()'>leave message</a>";
     }
     if (userNumber > 0)
         document.getElementById('error').innerHTML = "";

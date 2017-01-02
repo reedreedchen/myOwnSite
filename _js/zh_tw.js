@@ -159,7 +159,7 @@ function detectLang() //darkboard
             document.getElementById("emailText").innerHTML = "Email:";
             document.getElementById("msgText").innerHTML = "Message:";
             document.getElementById("privateText").innerHTML = "Private:";
-        document.getElementById('toggleMessageLink').innerHTML = "<a class='pinkText' href='javastript:void(0)' onclick='writeUserData()'>save</a> <a class='pinkText' href='javastript:void(0)' onclick='openBox()'>close</a>"
+            document.getElementById('toggleMessageLink').innerHTML = "<a class='pinkText' href='javascript:void(0)' onclick='writeUserData()'>save</a> <a class='pinkText' href='javascript:void(0)' onclick='openBox()'>close</a>"
 
             
         }
@@ -169,7 +169,7 @@ function detectLang() //darkboard
             document.getElementById("emailText").innerHTML = "電子信箱:";
             document.getElementById("msgText").innerHTML = "留言內容:";
             document.getElementById("privateText").innerHTML = "隱藏:";
-            document.getElementById('toggleMessageLink').innerHTML = "<a class='pinkText' href='javastript:void(0)' onclick='writeUserData()'>儲存</a> <a class='pinkText' href='javastript:void(0)' onclick='openBox()'>關閉</a>"
+            document.getElementById('toggleMessageLink').innerHTML = "<a class='pinkText' href='javascript:void(0)' onclick='writeUserData()'>儲存</a> <a class='pinkText' href='javascript:void(0)' onclick='openBox()'>關閉</a>"
         }
 
     }
