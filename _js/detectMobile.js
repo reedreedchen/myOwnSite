@@ -14,9 +14,7 @@ function detectMobile()
 			width:'320px',
 			height:'180px'
 		});
-		$('.iframeRound').css({
-			width:'95%',
-		});
+		$('.iframeRound').css(width,'95%');
 	}
 }
 

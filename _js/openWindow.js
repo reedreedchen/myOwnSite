@@ -1,4 +1,4 @@
-var isOpen=false;
+﻿var isOpen=false;
 var video1src;
 var video2src;
 var video3src;
@@ -23,9 +23,7 @@ function closeTab(){
 
 function showOverlayBox() {
 	if(isOpen == false) return;
-	$('.overlayBox').css({
-		display:'block',
-	});		
+	$('.overlayBox').css('display','block');		
 }
 
 function resetVideo()
