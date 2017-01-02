@@ -20,7 +20,7 @@ function translate(){
 		document.getElementById("research").innerHTML = "出版文獻";
 		document.getElementById("research1").innerHTML = "以動畫與遊戲的故事創作為方法的自我民族誌研究";
 		document.getElementById("research2").innerHTML = "居家照護工作者安全訓練模擬電玩";
-		document.getElementById("scripting").innerHTML = "程式語言(Monobehavior 與 C#)";
+		document.getElementById("scripting").innerHTML = "程式語言";
 		document.getElementById("3DCreation").innerHTML = "3D創作";
 		document.getElementById("3DCreation1").innerHTML = "實時演算-居家護理模擬計畫 - 5 張圖片";
 		document.getElementById("3DCreation2").innerHTML = "介面設計-居家護理模擬計畫 - 3 張圖片";
@@ -76,7 +76,7 @@ function translate(){
 		document.getElementById("research").innerHTML = "Research";
 		document.getElementById("research1").innerHTML = "<i>Autoethnographic Research through Storytelling in Animation and Video Games</i>";
 		document.getElementById("research2").innerHTML = "<i>Gaming Simulation as Health and Safety Training for Home Health Care Workers</i>";
-		document.getElementById("scripting").innerHTML = "Scripting (Monobehavior & C#)";
+		document.getElementById("scripting").innerHTML = "Scripting";
 		document.getElementById("3DCreation").innerHTML = "3D Creation";
 		document.getElementById("3DCreation1").innerHTML = "Real Time Rendering-<i>Home Healthcare</i><br/> - 5 images";
 		document.getElementById("3DCreation2").innerHTML = "UI Design-<i>Home Healthcare</i> - 3 images";
