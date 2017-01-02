@@ -18,7 +18,7 @@
 
 .overlayContent {
 	 height: 100%;
-	 padding:0.6%; 
+	 padding:0.6%;
 }
 
 .iframeRound{
@@ -40,7 +40,7 @@
 	border-style: none;
 }
 
-.closeLink { font-family: Verdana, Geneva, sans-serif; font-style: italic; color:#F69; 
+.closeLink { font-family: Verdana, Geneva, sans-serif; font-style: italic; color:#F69;
 }
 
 .launchLink { font-size: 12px; font-family: Verdana, Geneva, sans-serif; color: #EA2466; line-height: 17px; }
@@ -58,14 +58,19 @@ body { background-image: url(../_image/bg1.jpg); text-align: center; background-
 
 .pinkText { font-size: 12px; font-family: Verdana, Geneva, sans-serif; color: #EA2466; line-height: 17px; }
 
-#list {font-size: 14px; color: #F69;}
+.list {
+   list-style-type: none;
+}
+.listDiv {
+    padding-top:10px;
+}
 
 /*big boxes*/
 .bigTable { /*the largest table that I put everything inside*/
 	border-radius:5px 5px 5px 5px;
 	background-color: #FFB8D0;  height: 0;
 	padding-top:2%;
-	padding-bottom:2%; /* start and end of boxes */ 
+	padding-bottom:2%; /* start and end of boxes */
 	margin-left: auto;
 	margin-right: auto;
 	width:620px;
@@ -83,7 +88,7 @@ body { background-image: url(../_image/bg1.jpg); text-align: center; background-
 	margin-bottom: 4%;
 	width: 531px;
   }
-  
+
 .floatingTable {
 	border-radius:25px 25px 5px 5px;
 	bottom:0%;
@@ -101,7 +106,7 @@ body { background-image: url(../_image/bg1.jpg); text-align: center; background-
   }
 
 .footer
-{ 
+{
  padding-top:6%; padding-bottom:6%;
   }
 .textBox /*small text boxes*/
@@ -120,14 +125,16 @@ body.noscroll
 /*standardized video sizing*/
 .videoSizing
 {
-	width:500px; 
+	width:500px;
 	height:281px;
 }
 
 .gallImageSizing
-{ 
+{
+    box-shadow: 0px 2px 5px #323232;
     text-decoration:none;
 	border-radius:5px 5px 5px 5px;
 	width:100%;
 	height:auto;
+    margin-bottom:6px;
 }
