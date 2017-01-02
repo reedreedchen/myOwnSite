@@ -26,8 +26,8 @@ function detectBrowser() {
         _browser.version = match ? match[1] : "";
       }
             
-      $("#browserResult").append("<br/>The browser is <b>" + (x === "opr" ? "Opera" : x) +
-        "</b> v. <b>" + (_browser.version ? _browser.version : "N/A") + "</b>");
+     // $("#browserResult").append("<br/>The browser is <b>" + (x === "opr" ? "Opera" : x) +
+       // "</b> v. <b>" + (_browser.version ? _browser.version : "N/A") + "</b>");
       if (x == "msie") window.location = "http://reneechenworkcom.ipage.com/public/";
         break;
     }
