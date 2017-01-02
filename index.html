@@ -1,7 +1,6 @@
 ﻿<!--website written and maintained by Renee Chia-Lei Chen-->
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
+<!DOCTYPE html >
+<!-- saved from url=(0014)about:internet -->
 <html lang="en">
 <head>
 <link href="favicon.ico" rel="shortcut icon" />
@@ -10,7 +9,7 @@
 <script type="text/javascript" src="_js/jquery-1.2.6.min.js"></script>
 <script type="text/javascript" src="_js/detectMobile.js"></script>
 <script type="text/javascript" src="_js/tableControl.js"></script>
-
+<script type="text/javascript" src="_js/detectBrowser.js"></script>
 <link rel="stylesheet" href="_css/style.css" />
 <title>Renee Home</title>
 </head>
@@ -27,7 +26,7 @@
 <!--translate starts-->
     <table class="floatingTable">
         <tr>
-        <td><div align="center"><a href="javascript:void(0)" onclick="closeTab();" id="tab" class="pinkText" style="text-decoration: none">▼</a><br/><span class="text">[</span><a href="javascript:void(0)" class="switchLanguage" id="languageButton" lang="zh-Hant-TW">-> 繁體中文</a><span class="text">]</span><br/>
+        <td><div style="text-align:center"><a href="javascript:void(0)" onclick="closeTab();" id="tab" class="pinkText" style="text-decoration: none">▼</a><br/><span class="text">[</span><a href="javascript:void(0)" class="switchLanguage" id="languageButton" lang="zh-Hant-TW">-> 繁體中文</a><span class="text">]</span><br/>
 <span class="text">[</span><a href="_darkboards/thisSite.html" target="someFrame" class="launchLink" id="thisSite" lang="zh-Hant-TW">Update Log</a><span class="text">]</span><br/>
             <span class="text">[</span><a href="_darkboards/messageBoard.html" target="someFrame" class="launchLink" id="messageBoard" lang="zh-Hant-TW">Message Board</a><span class="text">]</span>
         </div></td></tr></table>
@@ -38,7 +37,7 @@
 	<td>
     <table class="smallTable">
 		<tr>
-		<td  align="center">
+		<td style="text-align:center">
 			<p class="heading">Renee Chen</p><p><span class="text">reedreedchen@gmail.com</span></p>
 			<div style="padding-top:9px; padding-bottom:13px;"><span class="text">[</span><a href="_darkboards/bio.html" target="someFrame" class="launchLink" id="bio">bio</a><span class="text"> |</span><span class="pinkText"> <a href="ResumeReneeChen_122616_5.pdf" target="someFrame" class="launchLink" id="resume">resume</a></span><span class="text"> | <a class="pinkText" id="demoReel" href="javascript:void(0)">demo reel</a> | <a  class="pinkText" id="gallery" href="javascript:void(0)">gallery</a> |<span class="pinkText"> <a id="animation" class="pinkText" href="javascript:void(0)">animation</a></span>]</span><br /></div>
 
@@ -49,7 +48,7 @@
 <!--Demo Reel starts-->
 <table class="smallTable" id="demoReelTable">
             		<tr>
-          	 		<td  align="center" ><p id="demoReelTitle" class="heading">Demo Reel 2016</p>
+          	 		<td style="text-align:center" ><p id="demoReelTitle" class="heading">Demo Reel 2016</p>
             		<iframe src="https://player.vimeo.com/video/167056845"  frameborder="0" class="videoSizing" id="video1" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen"></iframe>
             		<div class="textBox"><p id="demoReelContent" class="text">Featured Projects: <i>Angel's Spirit</i> (2013), <i>Square Cat</i> (2013), <i>The Thing on My Belly</i> (2013), <i>Eye of Despair</i> (2014), <i>The Home Healthcare Project</i> (2016)</p>
            		 </div></td>
@@ -61,9 +60,9 @@
 
 <!--Gallery Starts-->
 <table class="smallTable" id="galleryTable"><tr><td>
-<div align="center"><div class="textBox">
+<div style="text-align:center"><div class="textBox">
 <p class="heading" id="galleryTitle">Gallery</p>
-<p align="center"class="text" id="clickPreview">*Click on the links or the images for details.</p>
+<p style="text-align:center" class="text" id="clickPreview">*Click on the links or the images for details.</p>
 <p id="research" class="pinkText">Research</p>
 <ul class="list">
   <li><span class="text">[</span><a href="javascript:void(0)" class="pinkText" onclick="window.open('https://etd.ohiolink.edu/pg_10?0::NO:10:P10_ACCESSION_NUM:osu1461270639', 'newwindow', 'width=700, height=500');return false;" id="research1"><i>Autoethnographic Research through Storytelling in Animation and Video Games</i></a><span class="text">] (OhioLink)</span></li> <li><span class="text">[</span><a href="javascript:void(0)" class="pinkText" onclick="window.open('http://www.nursingsimulation.org/article/S1876-1399(16)30013-5/abstract', 'newwindow', 'width=700, height=500');return false;" id="research2"><i>Gaming Simulation as Health and Safety Training for Home Health Care Workers</i></a><span class="text">] (Clinical Simulation and Learning)</span></li>
@@ -105,7 +104,7 @@
 	 </ul>
 </div>
 
-<p align="center"><span class="text" id="cleckAni">*Click on the</span>
+<p style="text-align:center"><span class="text" id="cleckAni">*Click on the</span>
 <a href="javascript:void(0)" class="pinkText" onclick="window.scrollTo(0, 0)" id="animation2"><span class="pinkText">animation</span></a><span class="text" id="cleckAni3"> tab for more.</span></p>
 
 </div></div>
@@ -167,9 +166,10 @@
 	</td>
 	</tr>
 </table>
-
+<div id="browserResult">dfsdf</div>
 <script type="text/javascript" src="_js/zh_tw.js"></script>
 <script type="text/javascript" src="_js/openWindow.js"></script>
-<script type="text/javascript">localStorage.setItem ('lang', currentLang);</script>
+<script type="text/javascript">localStorage.setItem ('lang', currentLang);
+</script>
 </body>
 </html>
