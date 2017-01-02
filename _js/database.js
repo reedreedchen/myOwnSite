@@ -163,7 +163,11 @@ function openBox() {
     }
     if (userNumber > 0)
         document.getElementById('error').innerHTML = "";
-    else document.getElementById('error').innerHTML = "<span class='text'>The message board is empty.</span>";
+    else {
+        if (localStorage.getItem('lang') == "zh-Hant-TW") document.getElementById('error').innerHTML = "<span class='text'>目前還沒有留言。</span>";
+        else
+            document.getElementById('error').innerHTML = "<span class='text'>The message board is empty.</span>";
+    }
 }
 
 
@@ -191,11 +195,11 @@ function writeUserData()
         console.log("dataSavedOnFirebase");
         if (localStorage.getItem('lang') == "zh-Hant-TW") {
             document.getElementById('error').innerHTML = "<span class='text'>謝謝您的留言! 我會盡快回覆。</span>";
-            document.getElementById('toggleMessageLink').innerHTML = "<a class='pinkText' href='javastript:void(0)' onclick='openBox()'>留言</a>";
+            document.getElementById('toggleMessageLink').innerHTML = "<a class='pinkText' href='javascript:void(0)' onclick='openBox()'>留言</a>";
         }
         else {
             document.getElementById('error').innerHTML = "<span class='text'>Thank you! I will get back to you soon.</span>";
-            document.getElementById('toggleMessageLink').innerHTML = "<a class='pinkText' href='javastript:void(0)' onclick='openBox()'>leave message</a>";
+            document.getElementById('toggleMessageLink').innerHTML = "<a class='pinkText' href='javascript:void(0)' onclick='openBox()'>leave message</a>";
         }
         $('.messageBox').css('display', 'none');
 
