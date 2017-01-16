@@ -1,5 +1,5 @@
 ﻿<!--website written and maintained by Renee Chia-Lei Chen-->
-<!DOCTYPE html >
+<!DOCTYPE html>
 <!-- saved from url=(0014)about:internet -->
 <html lang="en">
 <head>
@@ -9,6 +9,7 @@
 <script type="text/javascript" src="_js/jquery-1.2.6.min.js"></script>
 <script type="text/javascript" src="_js/detectMobile.js"></script>
 <script type="text/javascript" src="_js/tableControl.js"></script>
+<script type="text/javascript" src="_js/imageDescription.js"></script>
 <link rel="stylesheet" href="_css/style.css" />
 <title>Renee Home</title>
 </head>
@@ -23,11 +24,15 @@
 <!--top ends-->
 
 <!--translate starts-->
-    <table class="floatingTable">
+    <table class="floatingTable" id="floatingTable">
         <tr>
-        <td><div style="text-align:center"><a href="javascript:void(0)" onclick="closeTab();" id="tab" class="pinkText" style="text-decoration: none">▼</a><br/><span class="text">[</span><a href="javascript:void(0)" class="switchLanguage" id="languageButton" lang="zh-Hant-TW">-> 繁體中文</a><span class="text">]</span><br/>
-<span class="text">[</span><a href="_darkboards/thisSite.html" target="someFrame" class="launchLink" id="thisSite" lang="zh-Hant-TW">Update Log</a><span class="text">]</span><br/>
-            <span class="text">[</span><a href="_darkboards/messageBoard.html" target="someFrame" class="launchLink" id="messageBoard" lang="zh-Hant-TW">Message Board</a><span class="text">]</span>
+<td><div style="text-align:center"><a href="javascript:void(0)" onclick="closeTab();" id="tab" class="pinkText" style="text-decoration: none">▼</a><br/>
+<span class="text">
+[<a href="javascript:void(0)" class="switchLanguage" id="languageButton" lang="zh-Hant-TW">-> 繁體中文</a>]<br/>
+[<a href="_darkboards/legalStatus.html" target="someFrame" class="launchLink" id="legalStatues">Legal Status FAQ</a>]<br/>
+[<a href="_darkboards/thisSite.html" target="someFrame" class="launchLink" id="thisSite">Update Log</a>]<br/>
+[<a href="_darkboards/messageBoard.html" target="someFrame" class="launchLink" id="messageBoard">Message Board</a>]
+</span>
         </div></td></tr></table>
 <!--translate ends-->
 
@@ -37,8 +42,16 @@
     <table class="smallTable">
 		<tr>
 		<td style="text-align:center">
-			<p class="heading">Renee Chen</p><p><span class="text">reedreedchen@gmail.com</span></p>
-			<div style="padding-top:9px; padding-bottom:13px;"><span class="text">[</span><a href="_darkboards/bio.html" target="someFrame" class="launchLink" id="bio">bio</a><span class="text"> |</span><span class="pinkText"> <a href="ResumeReneeChen_122616_5.pdf" target="someFrame" class="launchLink" id="resume">resume</a></span><span class="text"> | <a class="pinkText" id="demoReel" href="javascript:void(0)">demo reel</a> | <a  class="pinkText" id="gallery" href="javascript:void(0)">gallery</a> |<span class="pinkText"> <a id="animation" class="pinkText" href="javascript:void(0)">animation</a></span>]</span><br /></div>
+			<p class="heading">Renee Chen</p><p><p class="text">reedreedchen@gmail.com</p>
+			<div style="padding-top:9px; padding-bottom:13px;">
+                  
+                <span class="text">[<a class="pinkText" id="bio" href="javascript:void(0)">Bio</a> | 
+                    <a class="pinkText" id="demoReel" href="javascript:void(0)">Demo Reel</a> | 
+                    <a class="pinkText" id="scripting" href="javascript:void(0)">Scripting</a> | 
+                    <a class="pinkText" id="animation" href="javascript:void(0)">Animation</a> | 
+                    <a class="pinkText" id="gallery" href="javascript:void(0)">3D Creation</a> | 
+                    <a class="pinkText" id="designOther" href="javascript:void(0)">Visualization</a> | 
+                    <a class="pinkText" id="publication" href="javascript:void(0)">Publication</a>]</span></div>
 
 		  </td>
 	    </tr>
@@ -47,7 +60,7 @@
 <!--Demo Reel starts-->
 <table class="smallTable" id="demoReelTable">
             		<tr>
-          	 		<td style="text-align:center" ><p id="demoReelTitle" class="heading">Demo Reel 2016</p>
+          	 		<td style="text-align:center" ><p id="demoReelTitle" class="heading">Demo Reel</p>
             		<iframe src="https://player.vimeo.com/video/167056845"  frameborder="0" class="videoSizing" id="video1" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen"></iframe>
             		<div class="textBox"><p id="demoReelContent" class="text">Featured Projects: <i>Angel's Spirit</i> (2013), <i>Square Cat</i> (2013), <i>The Thing on My Belly</i> (2013), <i>Eye of Despair</i> (2014), <i>The Home Healthcare Project</i> (2016)</p>
            		 </div></td>
@@ -55,62 +68,87 @@
 	  </table>
 <!--Demo Reel ends-->
 
+<!--script starts-->
+<table class="smallTable" id="scriptingTable"><tr><td>
+<p id="scriptingTitle" class="heading">Scripting</p>
+<div class="textBox">
+<p class="text"><span id="clickGit">* Click and view to my </span><a href="https://github.com/reedreedchen" class="pinkText" onclick="window.open('https://github.com/reedreedchen', 'newwindow', 'width=700, height=500');return false;"><img style="width:20%" alt="goto my Github page" src="_image/GitHub_Logo.png" /></a> <span id="clickGit1">page.</span></p>
+<p class="text"><span id="clickGit2">* Please send me an email if you would like to play the full game.</span></p></div>
 
 
-<!--Gallery Starts-->
+<td><tr></table>
+<!--script ends-->
+
+<!--research starts-->
+<table class="smallTable" id="researchTable"><tr><td>
+<p id="research" class="heading">Publication</p>
+<div class="textBox">
+<p class="text"><span id="author">First Author:</span><br />"<a href="https://etd.ohiolink.edu/pg_10?0::NO:10:P10_ACCESSION_NUM:osu1461270639" class="pinkText" onclick="window.open('https://etd.ohiolink.edu/pg_10?0::NO:10:P10_ACCESSION_NUM:osu1461270639', 'newwindow', 'width=700, height=500');return false;" id="research1"><i>Autoethnographic Research through Storytelling in Animation and Video Games</i></a>"
+        Renee Chen, Susan Melsop (Advisor).
+       The Ohio State University. 2016. 132 pages.</p>
+    <p class="text"><span id="author1">Credited for game development:</span><br />"<a href="http://www.nursingsimulation.org/article/S1876-1399(16)30013-5/abstract" class="pinkText" onclick="window.open('http://www.nursingsimulation.org/article/S1876-1399(16)30013-5/abstract', 'newwindow', 'width=700, height=500');return false;" id="research2"><i>Gaming Simulation as Health and Safety Training for Home Health Care Workers</i></a>"
+        Amy R. Darragh, Steve Lavender, Barbara Polivka, Carolyn M. Sommerich, Celia E. Wills, Bradley A. Hittle, Renee
+Chen, Donald L. Stredney. Clinical Simulation in Nursing Vol. 12, 2016, pp 328-335.
+        </p>
+</div>
+<td><tr></table>
+<!--research ends-->
+
+<!--bio starts-->
+<table class="smallTable" id="bioTable"><tr><td>
+<p id="bioTitle" class="heading">Bio</p>
+  <div style="width:95%; margin:auto; text-align:left">
+        <p class="text"><img alt="reneePhoto" src="_image/BioPic.jpg" width="224" height="224" class="floatLeft" /><span id="p1">Renee Chia-Lei Chen is fulfilling a lifelong passion by becoming a video game artist. In 2011, she completed her Bachelor of Science degree in Multimedia and Game Science at Lunghwa University of Science and Technology in Taiwan. She continued to strive for excellence in design capabilities and technical expertise by pursuing graduate studies. She graduated from the Ohio State University in 2016 with a Master of Fine Arts in Digital Animation and Interactive Media.</span></p>
+        <p class="text"><span id="p2">Renee also studied social psychology, gender studies, and languages in addition to design and technical studies. She firmly believes that video games and animation tell a story about human experience in addition to providing entertainment.</span><img class="floatRight" alt="reneePic" src="_image/mevr.jpg" width="142" height="249" /><span id="p3" >She has depth as a storytelling researcher and artist by combining her educational knowledge and wisdom from personal struggles into her work. She creates depth exploring all sides of an issue in order to clarify and seek resolution. She understands that people each have unique lives and unspoken tragedies. She strives to make video games entertaining also with action, black humor and heartbreak. Some of her own favorite games are <i>We Heart Katamari</i>, <i>The Sims 3</i>, <i>World of Warcraft</i>, <i>Life is Strange</i>, <i>Project Zomboid</i>, and <i>Skyrim</i>.</span></p>
+      <p class="text" id="p4">When Renee was in graduate school, she served as a Graduate Research Associate at Interface Lab in Ohio Supercomputer Center. She collaborated with many researchers and software engineers to produce virtual simulation for healthcare training. Under supervision she worked on UI, modeling, texturing, integration, and optimization. Renee is now ready to begin her career and offer her many talents. She currently resides in Columbus Ohio along with her dog Emma where she enjoys relaxing with friends and attending the pug meetup group.</p>
+  </div>
+                <p><a href="ResumeReneeChen_122616_5.pdf" target="someFrame" class="launchLink" id="resume">See Resume</a></p>
+</td></tr></table>
+<!--bio ends-->
+
+<!--3d creation Starts-->
 <table class="smallTable" id="galleryTable"><tr><td>
-<div style="text-align:center"><div class="textBox">
-<p class="heading" id="galleryTitle">Gallery</p>
-<p style="text-align:center" class="text" id="clickPreview">*Click on the links or the images for details.</p>
-<p id="research" class="pinkText">Research</p>
-<ul class="list">
-  <li><span class="text">[</span><a href="javascript:void(0)" class="pinkText" onclick="window.open('https://etd.ohiolink.edu/pg_10?0::NO:10:P10_ACCESSION_NUM:osu1461270639', 'newwindow', 'width=700, height=500');return false;" id="research1"><i>Autoethnographic Research through Storytelling in Animation and Video Games</i></a><span class="text">] (OhioLink)</span></li> <li><span class="text">[</span><a href="javascript:void(0)" class="pinkText" onclick="window.open('http://www.nursingsimulation.org/article/S1876-1399(16)30013-5/abstract', 'newwindow', 'width=700, height=500');return false;" id="research2"><i>Gaming Simulation as Health and Safety Training for Home Health Care Workers</i></a><span class="text">] (Clinical Simulation and Learning)</span></li>
+<div style="text-align:center">
+<p class="heading" id="galleryTitle">3D Creation</p>
 
-<div class="listDiv">	
-</ul>
-<div class="listDiv">
-<p id="scripting" class="pinkText">Scripting</p>
-		  <ul class="pinkText">
-  <li style="list-style: none"><a href="javascript:void(0)" class="pinkText" onclick="window.open('https://github.com/reedreedchen', 'newwindow', 'width=700, height=500');return false;"><img alt="goto my Github page" src="_image/GitHub_Logo.png" /></a></li>
-</ul>
-</div>
-<div class="listDiv">
-<span class="pinkText" id="3DCreation">3D Creation</span>
-<ul class="list">
-    <li><span class="text" id="3DCreation1">Real Time Rendering-<i>Home Healthcare</i><br/> - 5 images</span><br/><a href="_darkboards/nioshRendering.html" target="someFrame" class="launchLink"><img class="gallImageSizing" src="_image/assess_render__0000.jpg" alt="Real Time Rendering-Home Healthcare" /></a></li>
-    <li><span class="text" id="3DCreation2">UI Design-<i>Home Healthcare</i> - 3 images</span><br /><a href="_darkboards/UI.html" target="someFrame" class="launchLink"><img class="gallImageSizing" src="_image/home1.jpg" alt="UI Design-Home Healthcare" /></a></li>
-    <li><span class="text" id="3DCreation3">Environment-<i>Home Healthcare</i> - 8 images</span><br /><a href="_darkboards/nioshImages.html" target="someFrame" class="launchLink"><img class="gallImageSizing" alt="Environment-Home Healthcare" src="_image/home2.jpg" /></a></li>
-    <li><span class="text" id="3DCreation4">Character-<i>Mom in the Box</i> - 14 images</span><a href="_darkboards/modelling.html" target="someFrame" class="launchLink"><img class="gallImageSizing" alt="Character-Mom in the Box" src="_image/mom01.jpg" /></a></li>
+    <p class="text" id="clickPreview">* Click on the images for details.</p>
+     
+      <div><a href="_darkboards/nioshRendering.html" target="someFrame" class="launchLink">
+        <img class="gallImageSizing" src="_image/assess_render__0000.jpg" alt="Real Time Rendering-Home Healthcare" /></a><br />
+        <span class="text" style="display:none" id="3DCreation1">Real Time Rendering-<i>Home Healthcare</i> - 5 images</span></div>
+     
+      <div><a href="_darkboards/UI.html" target="someFrame" class="launchLink">
+        <img class="gallImageSizing" src="_image/home1.jpg" alt="UI Design-Home Healthcare" /></a><br />
+       <span class="text" style="display:none" id="3DCreation2">UI Design-<i>Home Healthcare</i> - 3 images</span></div>
+      <div><a href="_darkboards/nioshImages.html" target="someFrame" class="launchLink">
+        <img class="gallImageSizing" alt="Environment-Home Healthcare" src="_image/home2.jpg" /></a><br />
+   <span class="text" style="display:none" id="3DCreation3">Environment-<i>Home Healthcare</i> - 8 images</span></div>
+      <div>
+    <a href="_darkboards/modelling.html" target="someFrame" class="launchLink">
+        <img class="gallImageSizing" alt="Character-Mom in the Box" src="_image/mom01.jpg" /></a><br />
+  <span class="text" style="display:none" id="3DCreation4">Character-<i>Mom in the Box</i> - 14 images</span></div></div>
+</td></tr></table>
+<!--3d creation ends-->
 
-</ul>
-</div>
-<div class="listDiv">
-<span class="pinkText" id="other">Design - Other</span>
- <ul class="list">
-        <li><span class="text" id="other1">Level Design-<i>Forsaken</i> - 3 images</span><a href="_darkboards/forsaken.html" target="someFrame" class="launchLink"><img class="gallImageSizing" src="_image/level_small.jpg" alt="Level Design-Forsaken" /></a></li>
-        <li><span class="text" id="other2">Data Visualization-<i>TWO</i> - 4 images</span><a href="_darkboards/two.html"target="someFrame" class="launchLink"><img class="gallImageSizing" src="_image/two_small.jpg" alt="Data Visualization-Two" /></a></li>
-        <li><span class="text" id="other3">Flash, Graphic Design-<i>SWSS</i> - 10 images</span><a href="_darkboards/swss.html" target="someFrame" class="launchLink"><img class="gallImageSizing" src="_image/W_beginningScenes60000.jpg" alt="Flash, Graphic Design-SWSS" /></a></li>
-     </ul>
-</div>
-<div class="listDiv">
-<span class="pinkText" id="storytelling">Storytelling & Storyboards </span>
-    <ul class="list">
-        <li><span class="text" id="storytelling1"><i>Square Cat</i> - 1 image</span><a href="_darkboards/squareCat.html" target="someFrame" class="launchLink"><img class="gallImageSizing" src="_image/squareCat_small.jpg" alt="Square Cat storyboard" /></a></li>
-        <li><span class="text" id="storytelling2"><i>The Buried Unicorn</i> - 3 images</span><a href="_darkboards/unicorn_storyboard.html" target="someFrame" class="launchLink"><img class="gallImageSizing" src="_image/unicorn_small.jpg" alt="Storyboard-The Buried Unicorn" /></a></li>
-        <li><span class="text" id="storytelling3"><i>Angel's Spirit</i> - 3 images</span><a href="_darkboards/angel_storyboard.html" target="someFrame" class="launchLink"><img class="gallImageSizing" src="_image/angel_small.jpg" alt="Storyboard-Angel's Spirit" /></a></li>
-        <li><span class="text" id="storytelling4"><i>Eye of Despair</i> - 2 images</span><a href="_darkboards/eyeOfDespair.html" target="someFrame" class="launchLink"><img class="gallImageSizing" src="_image/eye_small.jpg" alt="Storyboard-Eye of Despair" /></a></li>
-        <li><span class="text" id="storytelling5"><i>The Falling Star</i> - 1 image</span><a href="_darkboards/fallingStar.html" target="someFrame" class="launchLink"><img class="gallImageSizing" src="_image/star_small.jpg" alt="Storyboard-The Falling Star" /></a></li>
-	 </ul>
-</div>
+<!--design other Starts-->
+<table class="smallTable" id="designTable"><tr><td>
+<div style="text-align:center">
+<p class="heading" id="other">Visualization</p>
+        <p class="text" id="clickPreview1">* Click on the images for details.</p>
 
-<p style="text-align:center"><span class="text" id="cleckAni">*Click on the</span>
-<a href="javascript:void(0)" class="pinkText" onclick="window.scrollTo(0, 0)" id="animation2"><span class="pinkText">animation</span></a><span class="text" id="cleckAni3"> tab for more.</span></p>
+     <div><a href="_darkboards/swss.html" target="someFrame" class="launchLink"><img class="gallImageSizing" src="_image/W_beginningScenes60000.jpg" alt="Flash, Graphic Design-SWSS" /></a><br />
+      <span class="text" style="display:none" id="other3">Flash, Graphic Design-<i>SWSS</i> - 10 images</span></div>
 
-</div></div>
-	</td>
-	</tr>
-	</table>
-<!--Gallery endss-->
+ <div><a href="_darkboards/two.html" target="someFrame" class="launchLink"><img class="gallImageSizing" src="_image/two_small.jpg" alt="Data Visualization-Two" /></a><br />
+  <span class="text" style="display:none" id="other2">Data Visualization-<i>TWO</i> - 4 images</span></div>
+
+  <div><a href="_darkboards/forsaken.html" target="someFrame" class="launchLink"><img class="gallImageSizing" src="_image/level_small.jpg" alt="Level Design-Forsaken" /></a><br />
+      <span class="text" style="display:none" id="other1">Level Design-<i>Forsaken</i> - 3 images</span></div>
+
+</div>
+</td></tr></table>
+<!--design other Ends-->
+
 <!--Animation starts-->
 <table class="smallTable" id="animationTable">
    	    <tr>
@@ -121,7 +159,7 @@
 
 	<!--adventure comedy starts-->
 
-  <div style="padding-top:4%; padding-bottom:2%"><span class="text" id="collaborative">Collaborative work with<br/>Xiaoshu Wang and Shumeng Zhao</span></div>
+  <div class="textBox2"><span class="text" id="collaborative">Collaborative work with<br/>Xiaoshu Wang and Shumeng Zhao</span></div>
                     	<div class="textBox" style="padding-bottom:2%">
                           	<span class="pinkText" id="vimeo1"><i>Adventure Comedy</i> </span><span class="text" id="vimeo1_explain">expresses our imagination based off of the music written by Steve Samler. Following the  beat of the music, a girl starts a fantastic adventure.</span>
                     	</div>
@@ -130,7 +168,7 @@
                  <hr />
 	<!--the thing on my belly starts-->
                    <iframe src="https://player.vimeo.com/video/74166581" frameborder="0" class="videoSizing" id="video3" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen"></iframe>
-				  <div class="textBox"><p><span class="pinkText" id="vimeo2"><i>The Thing on My Belly</i></span><span class="text" id="vimeo2_explain">discusses identity issues many people are dealing with.</span></p></div>
+				  <div class="textBox"><p><span class="pinkText" id="vimeo2"><i>The Thing on My Belly</i></span><span class="text" id="vimeo2_explain"> discusses identity issues many people are dealing with.</span></p></div>
 	<!--the thing on my belly ends-->
 					<hr />
 	<!--square cat starts-->
@@ -153,21 +191,21 @@
 <!--Animation ends-->
 
 <!--footer starts-->
-
 <table class="smallTable">
         <tr>
         <td class="footer">
-        	<span class="text">© Renee Chen 2013 - 2016</span></td>
+        	<span class="text">© Renee Chen 2013 - 2016</span>
+        </td>
         </tr>
       </table>
-
 <!--footer ends-->
+
 	</td>
 	</tr>
 </table>
+
 <script type="text/javascript" src="_js/zh_tw.js"></script>
 <script type="text/javascript" src="_js/openWindow.js"></script>
-<script type="text/javascript">localStorage.setItem ('lang', currentLang);
-</script>
+<script type="text/javascript">localStorage.setItem ('lang', currentLang);</script>
 </body>
 </html>

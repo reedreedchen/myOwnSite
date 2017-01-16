@@ -8,11 +8,11 @@ function detectMobile()
 	if (window.isMobile)
 	{
 		document.getElementById('resume').setAttribute("href","resumeMobile.html");
-		$('.bigTable').css("width",'480px');
+		$('.bigTable').css("width",'460px');
 		$('.smallTable').css("width","400px");
 		$('.videoSizing').css({
-			width:'320px',
-			height:'180px'
+			width:'95%',
+			height:'220px'
 		});
 		$('.iframeRound').css('width','95%');
 	}

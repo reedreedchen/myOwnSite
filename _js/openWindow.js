@@ -6,19 +6,22 @@ var video4src;
 var video5src;
 var video6src;
 
-function closeTab(){
-	if(document.getElementById('tab').innerHTML=="▼" &&　$(".floatingTable").css("bottom")=='0px')//down triangle
-	{
-		$( ".floatingTable" ).animate({ "bottom": "-=51px" }, "slow", "swing", function(){document.getElementById('tab').innerHTML="▲";
-		});
-	}
-	else if (document.getElementById('tab').innerHTML == "▲" && $(".floatingTable").css("bottom") == '-51px')//up triangle
-	{
-	  $( ".floatingTable" ).animate({ "bottom": "+=51px" }, "slow", "swing", function(){	
-	  document.getElementById('tab').innerHTML="▼";
-	  } );
-	}
+function closeTab() {
+    var tableHight = document.getElementById('floatingTable').offsetHeight
+    var heightControl = tableHight - tableHight / 4;
 
+    if (document.getElementById('tab').innerHTML == "▼" && $(".floatingTable").css("bottom") == '0px')//down triangle
+    {
+        $(".floatingTable").animate({ "bottom": '-=' +heightControl + 'px' }, "slow", "swing", function () {
+            document.getElementById('tab').innerHTML = "▲";
+        });
+    }
+    else if (document.getElementById('tab').innerHTML == "▲" && $(".floatingTable").css("bottom") == -heightControl + 'px')//up triangle
+    {
+        $(".floatingTable").animate({ "bottom": '+=' + heightControl + 'px' }, "slow", "swing", function () {
+            document.getElementById('tab').innerHTML = "▼";
+        });
+    }
 }
 
 function showOverlayBox() {
@@ -60,7 +63,6 @@ $(window).bind('resize',showOverlayBox);
 // activate when the link with class launchLink is clicked
 $('a.launchLink').click( doOverlayOpen );
 $('a.closeLink').click( doOverlayClose );
-//$('a.button').click( doOverlayOpen );
 // close it when closeLink is clicked
 $('#contactButton').click( doOverlayOpen )
 

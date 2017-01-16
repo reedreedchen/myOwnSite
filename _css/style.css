@@ -1,8 +1,19 @@
 /*css file written by Renee Chia-Lei Chen*/
 
-/*popup*/
-.bgCover { position:fixed; left:0; top:0; display:none; overflow:hidden }
+/*background*/
+.bgCover {
+    position:fixed; left:0; top:0; display:none; overflow:hidden
 
+}
+body {
+    background-image: url(../_image/bg1.jpg);
+    text-align: center;
+    background-color: #000;
+    background-attachment: fixed;
+    overflow-y:scroll;
+}
+
+/*popup*/
 .overlayBox {
   	display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -15,54 +26,67 @@
  /*   background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
 }
-
 .overlayContent {
 	 height: 100%;
 	 padding:0.6%;
 }
-
 .iframeRound{
 	margin-right:auto;
 	margin-left:auto;
 	margin-top:3%;
 	width:680px;
 	height:85%;
-	background-color: ;
 	border-radius:5px 5px 5px 5px;
 	border-style:hidden;
     background-color: rgba(0,0,0,1);
 	}
-
 #iframe
-{	margin-top:1%;
+{	
+    margin-top:1%;
 	height: 95%;
 	width:95%;
 	border-style: none;
 }
-
-.closeLink { font-family: Verdana, Geneva, sans-serif; font-style: italic; color:#F69;
+.closeLink {
+    font-family: Verdana, Geneva, sans-serif;
+    font-style: italic;
+    color:#F69;
+}
+.launchLink { 
+    font-size: 12px;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #EA2466;
 }
 
-.launchLink { font-size: 12px; font-family: Verdana, Geneva, sans-serif; color: #EA2466; line-height: 17px; }
-
-.switchLanguage{ font-size: 12px; font-family: Verdana, Geneva, sans-serif; color: #EA2466; line-height: 17px;}
-/*popup ends*/
-
-/*background*/
-body { background-image: url(../_image/bg1.jpg); text-align: center; background-color: #000; background-attachment: fixed;  overflow-y:scroll;}
+/*language link*/
+.switchLanguage{
+    font-size: 12px;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #EA2466;
+}
 
 /*texts*/
-.heading {  text-align: center; color: #EA2466; font-family: Verdana, Geneva, sans-serif; font-size: large; line-height: 30px; }
-
-.text {	color: #323232; font-family: Verdana, Geneva, sans-serif; font-size: 12px; line-height: 17px;}
-
-.pinkText { font-size: 12px; font-family: Verdana, Geneva, sans-serif; color: #EA2466; line-height: 17px; }
-
-.list {
-   list-style-type: none;
+.heading {
+    text-align: center;
+    color: #EA2466;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: large;
+    line-height: 30px;
+    cursor:default;
 }
-.listDiv {
-    padding-top:10px;
+
+.text {
+    color: #323232;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    line-height: 17px;
+    cursor:default;
+}
+.pinkText {
+    font-size:12px;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #EA2466;
+    line-height: 17px;
 }
 
 /*big boxes*/
@@ -88,7 +112,6 @@ body { background-image: url(../_image/bg1.jpg); text-align: center; background-
 	margin-bottom: 4%;
 	width: 531px;
   }
-
 .floatingTable {
 	border-radius:25px 25px 5px 5px;
 	bottom:0%;
@@ -104,16 +127,36 @@ body { background-image: url(../_image/bg1.jpg); text-align: center; background-
 	width:auto;
 	background-image: url(../_image/littlebg.png); /*the transparency*/
   }
-
 .footer
 {
- padding-top:6%; padding-bottom:6%;
-  }
+    padding-top:6%;
+    padding-bottom:6%;
+}
 .textBox /*small text boxes*/
-{	text-align:left;
+{	
+    text-align:left;
 	margin:auto;
 	width:312px;
-	}
+}
+.textBox2
+{
+    padding-top:2%;
+    padding-bottom:2%;
+}
+
+/*bioImages*/
+.floatLeft
+{
+	float: left;
+	margin: 0.5em;
+	padding: 0.5em;
+	font-family: Verdana, Geneva, sans-serif;
+}
+.floatRight {
+    float: right;
+    margin: 0.5em;
+    padding: 0.5em;
+}
 
 /*js adds this when any blackboard is open*/
 body.noscroll
@@ -125,16 +168,40 @@ body.noscroll
 /*standardized video sizing*/
 .videoSizing
 {
+    box-shadow: 0px 2px 5px #323232;
 	width:500px;
 	height:281px;
 }
-
 .gallImageSizing
-{
+{   
     box-shadow: 0px 2px 5px #323232;
     text-decoration:none;
-	border-radius:5px 5px 5px 5px;
-	width:100%;
+	width:95%;
 	height:auto;
     margin-bottom:6px;
+}
+.brightness{
+    filter: brightness(50%);
+
+} /*when mouseover the image*/
+
+/*used for imageDescription.js*/
+.image-wrapper {
+    position: relative;
+}
+.image-wrapper span {
+    position: absolute;
+    display:block;
+    left:0;
+    top: 0;
+    padding-left:25px;
+    padding-top:10px;
+    color: #FFF;
+    text-shadow: 2px 2px #323232;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 15px; 
+    pointer-events:none;
+}
+.pad {
+padding-bottom:20px;
 }
