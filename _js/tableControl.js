@@ -66,7 +66,6 @@ function resetAnimation() {
 $(document).ready(function () {
     resizeVideos();
     hideTable(); showTable($('#demoReelTable'));
-    $('.smallTable').css("height", window.innerHeight - 88);
     $('#animation').click(function () {
 	    currentID = "animation";
 		showTable($('#animationTable'));
@@ -121,6 +120,7 @@ function resizeVideos() {
     newVideoWidth = $(window).width() * 0.7 * 0.8; //0.7 is the width of .smalltable which is 70% relative to screen size. 0.8 is 80% relative to smalltable.
     newVideoHeight = newVideoWidth * 0.562;
     reassignVideoSizing();
+    $('.smallTable').css("height", window.innerHeight - 88);
   //  console.log(newVideoWidth + "," + newVideoHeight);
 }
 

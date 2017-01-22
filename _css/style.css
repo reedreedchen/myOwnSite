@@ -131,7 +131,7 @@ body {
     height:44px;
  }
 .footerDiv {
-   line-height: 38px;
+   line-height: 20px;
    width:100%;
    text-align:center;
    top:0;
@@ -162,6 +162,7 @@ body {
 	background-color: #fee5ee;
 	text-align: right;
 	width:auto;
+    box-shadow: 1px 1px;
   }
 td {
 vertical-align:top;
@@ -231,9 +232,13 @@ body.noscroll
     padding-top:20px;
     color: #FFF;
     text-shadow: 2px 2px #323232;
-    font-size: 20px; 
+    font-size: 20px;
     pointer-events:none;
 }
 .pad {
 padding-bottom:20px;
+}@media only screen and (max-width: 320px) {
+
+   body { font-size: 2em; }
+
 }
