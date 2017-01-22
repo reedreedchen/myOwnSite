@@ -1,5 +1,6 @@
 ﻿var oldimage;
 var allowNext = true;
+
 $(function () {
     if (!window.isMobile) {
         $(".gallImageSizing").bind("mouseenter", function () {
@@ -7,21 +8,18 @@ $(function () {
             $('.image-wrapper span').css('display', 'block');
             if (msieversion() == false) {//check if use IE
                 $(this).addClass("brightness"); //if not, use filter
-            }else if (this.naturalWidth > 0 && allowNext) {
+            } else if (this.naturalWidth > 0 && allowNext) {
                 allowNext = false; // can't jump to another image before finish loading the original image.
                 oldimage = this.src;
                 this.src = adjustBrightness(this);
             }
         });
-        $(".gallImageSizing").bind("mouseleave", function ()
-        {
+        $(".gallImageSizing").bind("mouseleave", function () {
             $('.image-wrapper span').css('display', 'none');
             $(this).parent().parent().removeClass('image-wrapper');
-            if (msieversion() == false)
-            {
+            if (msieversion() == false) {
                 $(this).removeClass("brightness");
-            } else
-            {
+            } else {
                 this.src = oldimage;
                 allowNext = true;
             }
@@ -31,6 +29,7 @@ $(function () {
         $(".gallImageSizing").parent().parent().addClass('pad');
     }
 });
+
 
 function adjustBrightness(imgObj) { 
 

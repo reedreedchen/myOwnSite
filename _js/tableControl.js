@@ -64,7 +64,10 @@ function resetAnimation() {
 
 
 $(document).ready(function () {
-    resizeVideos();
+    
+
+    resize();
+
     hideTable(); showTable($('#demoReelTable'));
     $('#animation').click(function () {
 	    currentID = "animation";
@@ -113,15 +116,13 @@ $(document).ready(function () {
 	});
 });
 
-
 //window resizing for vimeo
-$(window).resize(resizeVideos);
-function resizeVideos() {
+$(window).resize(resize);
+function resize() {
     newVideoWidth = $(window).width() * 0.7 * 0.8; //0.7 is the width of .smalltable which is 70% relative to screen size. 0.8 is 80% relative to smalltable.
     newVideoHeight = newVideoWidth * 0.562;
     reassignVideoSizing();
     $('.smallTable').css("height", window.innerHeight - 88);
-  //  console.log(newVideoWidth + "," + newVideoHeight);
 }
 
 function reassignVideoSizing() {
