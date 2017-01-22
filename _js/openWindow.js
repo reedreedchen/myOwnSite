@@ -66,7 +66,6 @@ $('a.closeLink').click( doOverlayClose );
 // close it when closeLink is clicked
 $('#contactButton').click( doOverlayOpen )
 
-$(document).ready(detectMobile);
 $(document).ready(function(){
 	video1src=document.getElementById('video1').getAttribute("src");
 	video2src=document.getElementById('video2').getAttribute("src");

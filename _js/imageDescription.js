@@ -1,35 +1,51 @@
 ﻿var oldimage;
 var allowNext = true;
+$(window).ready(imageShow);
+$(window).resize(imageShow);
 
-$(function () {
-    if (!window.isMobile) {
-        $(".gallImageSizing").bind("mouseenter", function () {
-            $(this).parent().parent().addClass('image-wrapper');
-            $('.image-wrapper span').css('display', 'block');
-            if (msieversion() == false) {//check if use IE
-                $(this).addClass("brightness"); //if not, use filter
-            } else if (this.naturalWidth > 0 && allowNext) {
-                allowNext = false; // can't jump to another image before finish loading the original image.
-                oldimage = this.src;
-                this.src = adjustBrightness(this);
-            }
-        });
-        $(".gallImageSizing").bind("mouseleave", function () {
-            $('.image-wrapper span').css('display', 'none');
-            $(this).parent().parent().removeClass('image-wrapper');
-            if (msieversion() == false) {
-                $(this).removeClass("brightness");
-            } else {
-                this.src = oldimage;
-                allowNext = true;
-            }
-        });
-    } else { // if use mobile device, use different layout
-        $('.text').css('display', 'block');
+function imageShow() {
+    if ($(window).width() > 800) {
+        $('.imageText').css('display', 'none');
+    
+    } else if ($(window).width() <= 800) {
+        // if use mobile device, use different layout
+        $('.imageText').css('display', 'block');
         $(".gallImageSizing").parent().parent().addClass('pad');
     }
+}
+
+$(function(){$(".gallImageSizing").bind("mouseenter", imageMouseOver);
+    $(".gallImageSizing").bind("mouseleave", imageMouseLeave);
 });
 
+function imageMouseOver(){
+    if ($(window).width() > 800)
+    {
+        $(this).parent().parent().addClass('image-wrapper');
+        $('.image-wrapper span').css('display', 'block');
+        if (msieversion() == false) {//check if use IE
+            $(this).addClass("brightness"); //if not, use filter
+        } else if (this.naturalWidth > 0 && allowNext)
+        {
+            allowNext = false; // can't jump to another image before finish loading the original image.
+            oldimage = this.src;
+            this.src = adjustBrightness(this);
+        }
+    }
+}
+function imageMouseLeave()
+{
+    if ($(window).width() > 800) {
+        $('.image-wrapper span').css('display', 'none');
+        $(this).parent().parent().removeClass('image-wrapper');
+        if (msieversion() == false) {
+            $(this).removeClass("brightness");
+        } else {
+            this.src = oldimage;
+            allowNext = true;
+        }
+    }
+}
 
 function adjustBrightness(imgObj) { 
 
