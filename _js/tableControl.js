@@ -72,46 +72,46 @@ $(document).ready(function () {
     $('#animation').click(function () {
 	    currentID = "animation";
 		showTable($('#animationTable'));
-		$('.smallTable').css("height", window.innerHeight - 88);
+		$('.smallTable').css("height", window.innerHeight - $('.topTable').innerHeight()- $('.footerTable').innerHeight());
 		resetSrc();
 		reassignVideoSizing();
 	});
     $('#gallery').click(function () {
 		currentID = "gallery"; 
 		showTable($('#galleryTable'));
-		$('.smallTable').css("height", window.innerHeight - 88);
+		$('.smallTable').css("height", window.innerHeight - $('.topTable').innerHeight() - $('.footerTable').innerHeight());
 		resetSrc();
 
 	});
     $('#demoReel').click(function () {
 		currentID = "demoReel"; 
 		showTable($('#demoReelTable'));
-		$('.smallTable').css("height", window.innerHeight - 88);
+		$('.smallTable').css("height", window.innerHeight - $('.topTable').innerHeight() - $('.footerTable').innerHeight());
 		resetSrc();
 		reassignVideoSizing();
 	});
     $('#publication').click(function () {
 	    currentID = "publication";
 	    showTable($('#researchTable'));
-	    $('.smallTable').css("height", window.innerHeight - 88);
+	    $('.smallTable').css("height", window.innerHeight - $('.topTable').innerHeight() - $('.footerTable').innerHeight());
 	    resetSrc();
 	});
     $('#bio').click(function () {
 	    currentID = "bio";
 	    showTable($('#bioTable'));
-	    $('.smallTable').css("height", window.innerHeight - 88);
+	    $('.smallTable').css("height", window.innerHeight - $('.topTable').innerHeight() - $('.footerTable').innerHeight());
 	    resetSrc();
 	});
     $('#scripting').click(function () {
 	    currentID = "scripting";
 	    showTable($('#scriptingTable'));
-	    $('.smallTable').css("height", window.innerHeight - 88);
+	    $('.smallTable').css("height", window.innerHeight - $('.topTable').innerHeight() - $('.footerTable').innerHeight());
 	    resetSrc();
 	});
     $('#designOther').click(function () {
 	    currentID = "designOther";
 	    showTable($('#designTable'));
-	    $('.smallTable').css("height", window.innerHeight - 88);
+	    $('.smallTable').css("height", window.innerHeight - $('.topTable').innerHeight() - $('.footerTable').innerHeight());
 	    resetSrc();
 	});
 });
@@ -119,7 +119,10 @@ $(document).ready(function () {
 //window resizing for vimeo
 $(window).resize(resize);
 function resize() {
-    newVideoWidth = $(window).width() * 0.7 * 0.8; //0.7 is the width of .smalltable which is 70% relative to screen size. 0.8 is 80% relative to smalltable.
+    console.log($(window).width());
+    if (!window.isMobile)
+        newVideoWidth = $(window).width() * 0.7 * 0.8; //0.7 is the width of .smalltable which is 70% relative to screen size. 0.8 is 80% relative to smalltable.
+    else newVideoWidth = $(window).width() * 0.8;
     newVideoHeight = newVideoWidth * 0.562;
     reassignVideoSizing();
     $('.smallTable').css("height", window.innerHeight - 88);
