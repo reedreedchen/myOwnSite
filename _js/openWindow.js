@@ -8,7 +8,7 @@ var video6src;
 
 function closeTab() {
     var tableHight = document.getElementById('floatingTable').offsetHeight
-    var heightControl = tableHight - tableHight / 4;
+    var heightControl = tableHight - tableHight / 4 ;
 
     if (document.getElementById('tab').innerHTML == "▼" && $(".floatingTable").css("bottom") == '0px')//down triangle
     {

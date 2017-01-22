@@ -8,12 +8,12 @@ function detectMobile()
 	if (window.isMobile)
 	{
 		document.getElementById('resume').setAttribute("href","resumeMobile.html");
-		$('.bigTable').css("width",'460px');
+	//	$('.bigTable').css("width",'460px');
 		$('.smallTable').css("width","400px");
-		$('.videoSizing').css({
-			width:'95%',
-			height:'220px'
-		});
+	//	$('.videoSizing').css({
+	//		width:'95%',
+	//		height:'220px'
+	//	});
 		$('.iframeRound').css('width','95%');
 	}
 }

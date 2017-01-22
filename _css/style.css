@@ -5,12 +5,22 @@
     position:fixed; left:0; top:0; display:none; overflow:hidden
 
 }
+html {
+    position: relative;
+    min-height: 100%;
+    font-family: Verdana, Geneva, sans-serif;
+}
 body {
     background-image: url(../_image/bg1.jpg);
+    background-size: 250px 250px;
     text-align: center;
-    background-color: #000;
+    background-color: #fff;
     background-attachment: fixed;
     overflow-y:scroll;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-position: 0% center;
 }
 
 /*popup*/
@@ -24,7 +34,7 @@ body {
     height: 100%; /* Full height */
     overflow: hidden; /* Enable scroll if needed */
  /*   background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0.85); /* Black w/ opacity */
 }
 .overlayContent {
 	 height: 100%;
@@ -33,9 +43,8 @@ body {
 .iframeRound{
 	margin-right:auto;
 	margin-left:auto;
-	margin-top:3%;
-	width:680px;
-	height:85%;
+	width:70%;
+	height:95%;
 	border-radius:5px 5px 5px 5px;
 	border-style:hidden;
     background-color: rgba(0,0,0,1);
@@ -48,20 +57,18 @@ body {
 	border-style: none;
 }
 .closeLink {
-    font-family: Verdana, Geneva, sans-serif;
     font-style: italic;
     color:#F69;
 }
+
 .launchLink { 
-    font-size: 12px;
-    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
     color: #EA2466;
 }
 
 /*language link*/
 .switchLanguage{
-    font-size: 12px;
-    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
     color: #EA2466;
 }
 
@@ -69,74 +76,103 @@ body {
 .heading {
     text-align: center;
     color: #EA2466;
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: large;
+    font-size: 20px;
     line-height: 30px;
     cursor:default;
 }
 
 .text {
     color: #323232;
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 12px;
-    line-height: 17px;
+    font-size: 14px;
+    line-height: 21px;
     cursor:default;
 }
 .pinkText {
-    font-size:12px;
-    font-family: Verdana, Geneva, sans-serif;
+    font-size:14px;
     color: #EA2466;
-    line-height: 17px;
+    line-height: 21px;
 }
 
-/*big boxes*/
-.bigTable { /*the largest table that I put everything inside*/
-	border-radius:5px 5px 5px 5px;
-	background-color: #FFB8D0;  height: 0;
-	padding-top:2%;
-	padding-bottom:2%; /* start and end of boxes */
-	margin-left: auto;
-	margin-right: auto;
-	width:620px;
-  }
-.smallTable { /*bright inner table*/
-	border-radius:5px 5px 5px 5px;
+.midFont{ /*link fout size*/
+    font-size:14px;
+}
+
+.topTable {
 	background-color: #FFB8D0;
-	text-align: center;
-	width: 80%;
+	width: 100%;
+    z-index:1;
+    position: relative;
+    height: 44px;
+  }
+
+.name{ /*name in topTable*/
+    display: table-cell;
+    vertical-align:middle; line-height: 38px;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+
+.links {  /*links in topTable*/
+    display: table-cell;
+    vertical-align:middle;
+    line-height: 38px;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+
+.footerTable { 
+	background-color: #FFB8D0;
+	width: 100%;
 	border: 0px;
-	background-image: url(../_image/littlebg.png); /*the transparency*/
+	bottom: 0px;
+    position: absolute;
+    height:44px;
+ }
+.footerDiv {
+   line-height: 38px;
+   width:100%;
+   text-align:center;
+   top:0;
+}
+
+.smallTable { /*bright inner table*/
+	background-color: #fee5ee;
+    background-color: rgba(254,229,238,1);
+	text-align: center;
+	width:70%;
+    position:relative;
+    bottom:0px;
+    top:0;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 4%; /*between boxes*/
-	margin-bottom: 4%;
-	width: 531px;
+    padding-bottom:60px;
   }
+
+
 .floatingTable {
-	border-radius:25px 25px 5px 5px;
+	border-radius:25px 25px 0px 0px;
 	bottom:0%;
 	display:block;
 	left: auto;
-	right: 0%;
+	right: 10px;
 	position:fixed;
 	z-index:1;
-	background-color: #FFB8D0;
+	background-color: #fee5ee;
 	text-align: right;
-	margin-right: 0%;
-	margin-left: 0%;
 	width:auto;
-	background-image: url(../_image/littlebg.png); /*the transparency*/
   }
-.footer
-{
-    padding-top:6%;
-    padding-bottom:6%;
+td {
+vertical-align:top;
 }
+
 .textBox /*small text boxes*/
 {	
     text-align:left;
+    margin-top:0;
 	margin:auto;
-	width:312px;
+	width:80%;
 }
 .textBox2
 {
@@ -150,7 +186,6 @@ body {
 	float: left;
 	margin: 0.5em;
 	padding: 0.5em;
-	font-family: Verdana, Geneva, sans-serif;
 }
 .floatRight {
     float: right;
@@ -166,17 +201,15 @@ body.noscroll
 }
 
 /*standardized video sizing*/
-.videoSizing
-{
+.videoSizing {
     box-shadow: 0px 2px 5px #323232;
-	width:500px;
-	height:281px;
+    width: 500px;
 }
 .gallImageSizing
 {   
     box-shadow: 0px 2px 5px #323232;
     text-decoration:none;
-	width:95%;
+	width:80%;
 	height:auto;
     margin-bottom:6px;
 }
@@ -194,12 +227,11 @@ body.noscroll
     display:block;
     left:0;
     top: 0;
-    padding-left:25px;
-    padding-top:10px;
+    padding-left:120px;
+    padding-top:20px;
     color: #FFF;
     text-shadow: 2px 2px #323232;
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 15px; 
+    font-size: 20px; 
     pointer-events:none;
 }
 .pad {

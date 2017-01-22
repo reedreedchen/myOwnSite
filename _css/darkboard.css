@@ -7,8 +7,8 @@
 	text-align:left;
 	color: #fff;
 	font-family: Verdana, Geneva, sans-serif;
-	font-size: 12px;
-	line-height: 17px;
+	font-size: 14px;
+	line-height: 20px;
 	}
 
 .pinkText { font-size: 12px; font-family: Verdana, Geneva, sans-serif; color: #FF6297; line-height: 17px; }
@@ -34,12 +34,12 @@ body {
 .imageSizing_div{
 	margin:auto;
 	width:95%;
-	display:none;*/
+	display:none;
 }
 .tinyImageSizing
 {
 	border-radius:5px 5px 5px 5px;
-	width:15%;
+	width:8%;
 	height:auto;
 }
 

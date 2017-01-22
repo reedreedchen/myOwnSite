@@ -2,11 +2,12 @@
 //I don't need to open new pages and flick.
 //I found this method much pleasing.
 //by Renee Chia-Lei Chen 12/7/2016
-
-var currentID="demoReel";
+var currentID = "demoReel";
+var newVideoWidth;
+var newVideoHeight;
 function hideTable() 
 {
-	$('#demoReelTable').hide(); document.getElementById("demoReel").setAttribute("href","javascript:void(0)");
+    $('#demoReelTable').hide(); document.getElementById("demoReel").setAttribute("href","javascript:void(0)");
 	$('#animationTable').hide(); document.getElementById("animation").setAttribute("href", "javascript:void(0)");
 	$('#galleryTable').hide(); document.getElementById("gallery").setAttribute("href", "javascript:void(0)");
 	$('#researchTable').hide(); document.getElementById("publication").setAttribute("href", "javascript:void(0)");
@@ -24,14 +25,15 @@ function hideTable()
 
 function showTable($currentTable)
 {
-	hideTable();
+
+    hideTable();
 	$currentTable.show();
 	document.getElementById(currentID).removeAttribute("href");
 	document.getElementById(currentID).setAttribute("style", "color: #454545");
+
 }
 
 function resetSrc(){
-	
     if (currentID == "demoReel") {
 	    resetAnimation();
 	} else if (currentID == 'animation') {
@@ -60,41 +62,69 @@ function resetAnimation() {
     document.getElementById('video6').setAttribute("src", video6src);
 }
 
-$(document).ready(function(){
-	hideTable(); showTable($('#demoReelTable'));
-	$('#animation').mouseover(function(){
-		currentID = "animation"; 
+
+$(document).ready(function () {
+    resizeVideos();
+    hideTable(); showTable($('#demoReelTable'));
+    $('.smallTable').css("height", window.innerHeight - 88);
+    $('#animation').click(function () {
+	    currentID = "animation";
 		showTable($('#animationTable'));
+		$('.smallTable').css("height", window.innerHeight - 88);
 		resetSrc();
+		reassignVideoSizing();
 	});
-	$('#gallery').mouseover(function () {
+    $('#gallery').click(function () {
 		currentID = "gallery"; 
 		showTable($('#galleryTable'));
+		$('.smallTable').css("height", window.innerHeight - 88);
 		resetSrc();
+
 	});
-	$('#demoReel').mouseover(function () {
+    $('#demoReel').click(function () {
 		currentID = "demoReel"; 
 		showTable($('#demoReelTable'));
+		$('.smallTable').css("height", window.innerHeight - 88);
 		resetSrc();
+		reassignVideoSizing();
 	});
-	$('#publication').mouseover(function () {
+    $('#publication').click(function () {
 	    currentID = "publication";
 	    showTable($('#researchTable'));
+	    $('.smallTable').css("height", window.innerHeight - 88);
 	    resetSrc();
 	});
-	$('#bio').mouseover(function () {
+    $('#bio').click(function () {
 	    currentID = "bio";
 	    showTable($('#bioTable'));
+	    $('.smallTable').css("height", window.innerHeight - 88);
 	    resetSrc();
 	});
-	$('#scripting').mouseover(function () {
+    $('#scripting').click(function () {
 	    currentID = "scripting";
 	    showTable($('#scriptingTable'));
+	    $('.smallTable').css("height", window.innerHeight - 88);
 	    resetSrc();
 	});
-	$('#designOther').mouseover(function () {
+    $('#designOther').click(function () {
 	    currentID = "designOther";
 	    showTable($('#designTable'));
+	    $('.smallTable').css("height", window.innerHeight - 88);
 	    resetSrc();
 	});
 });
+
+
+//window resizing for vimeo
+$(window).resize(resizeVideos);
+function resizeVideos() {
+    newVideoWidth = $(window).width() * 0.7 * 0.8; //0.7 is the width of .smalltable which is 70% relative to screen size. 0.8 is 80% relative to smalltable.
+    newVideoHeight = newVideoWidth * 0.562;
+    reassignVideoSizing();
+  //  console.log(newVideoWidth + "," + newVideoHeight);
+}
+
+function reassignVideoSizing() {
+    $('.videoSizing').css('width', newVideoWidth);
+    $('.videoSizing').css('height', newVideoHeight);
+}
