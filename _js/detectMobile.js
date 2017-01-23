@@ -8,7 +8,6 @@ function detectMobile()
     }
     else
     {
-       
         document.getElementById('resume').setAttribute("href", "ResumeReneeChen_011717_7.pdf");
     }
 

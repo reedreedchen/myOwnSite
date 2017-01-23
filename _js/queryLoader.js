@@ -102,15 +102,15 @@ var QueryLoader = {
 
 	spawnLoader: function() {
 		if (QueryLoader.selectorPreload == "body") {
-			var height = $(window).height();
-			var width = $(window).width();
+			var height = $(window).height()+100;
+			var width = $(window).width()+100;
 			var position = "fixed";
 		} else {
 			var height = $(QueryLoader.selectorPreload).outerHeight();
 			var width = $(QueryLoader.selectorPreload).outerWidth();
 			var position = "absolute";
 		}
-		var left = $(QueryLoader.selectorPreload).offset()['left']-8;
+		var left = $(QueryLoader.selectorPreload).offset()['left'];
 		var top = $(QueryLoader.selectorPreload).offset()['top'];
 		QueryLoader.overlay = $("<div></div>").appendTo($(QueryLoader.selectorPreload));
 		$(QueryLoader.overlay).addClass("QOverlay");
@@ -127,7 +127,7 @@ var QueryLoader = {
 		
 		$(QueryLoader.loadBar).css({
 			position: "relative",
-			top: "90%",
+			top: "78%",
 			width: "0%"
 		});
 	},
@@ -161,10 +161,11 @@ var QueryLoader = {
 		//The end animation, adjust to your likings
 			$(QueryLoader.overlay).fadeOut(800,function()
 			{
-					$('body').css("overflow-y","auto");
+			    if(document.title != "Renee Home")
+    			    $('body').css("overflow-y", "auto");
 			});
 			$(QueryLoader.preloader).remove();
-			if(document.title == "bio | reneechenwork.com") $('.bioDiv').css('display','block');
-			else $('.imageSizing_div').css('display','block');
+			//if(document.title == "bio | reneechenwork.com") $('.bioDiv').css('display','block');
+			$('.imageSizing_div').css('display','block');
 	}
 }

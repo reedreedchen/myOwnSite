@@ -10,6 +10,7 @@ function translate(){
 		document.getElementById("thisSite").innerHTML = "網站更新誌";
 		document.getElementById("legalStatues").innerHTML = "合法身份 FAQ";
 
+		document.getElementById("interactiveDesigner").innerHTML = "互動設計";
 
 		document.title="Renee 的家"
 		document.getElementById("bio").innerHTML = "個人簡介";
@@ -20,9 +21,6 @@ function translate(){
 		document.getElementById("designOther").innerHTML = "視覺化";
 		document.getElementById("publication").innerHTML = "出版文獻";
 		document.getElementById("scripting").innerHTML = "程式設計";
-
-
-
 
 		document.getElementById("demoReelTitle").innerHTML = "作品剪輯";
 		document.getElementById("demoReelContent").innerHTML = "剪輯影片中之作品: <i>天使心靈</i> (<i>Angel's Spirit</i>) (2013), <i>立方貓</i> (<i>Square Cat</i>) (2013), <i>肚子上的怪東西</i> (<i>The Thing on My Belly</i>) (2013), <i>絕望的眼</i> (<i>Eye of Despair</i>)(2014), <i>居家護理模擬訓練</i> (<i>The Home Healthcare Project</i>) (2016)";
@@ -96,6 +94,7 @@ function translate(){
         document.getElementById("thisSite").innerHTML = "Update Log";
         document.getElementById("legalStatues").innerHTML = "Legal Status FAQ";
 
+        document.getElementById("interactiveDesigner").innerHTML = "Interactive Designer";
         //links
         document.getElementById("bio").innerHTML = "Bio";
 		document.getElementById("resume").innerHTML = "See Resume";

@@ -5,7 +5,7 @@ var video3src;
 var video4src;
 var video5src;
 var video6src;
-
+/*
 function closeTab() {
     var tableHight = document.getElementById('floatingTable').offsetHeight
     var heightControl = tableHight - tableHight / 4 ;
@@ -22,7 +22,7 @@ function closeTab() {
             document.getElementById('tab').innerHTML = "▼";
         });
     }
-}
+}*/
 
 function showOverlayBox() {
 	if(isOpen == false) return;
@@ -44,6 +44,8 @@ function resetVideo()
 	document.getElementById('video5').setAttribute("src",video5src);
 	document.getElementById('video6').setAttribute("src",video6src);
 }
+
+
 function doOverlayOpen() {
 	resetVideo();
 	isOpen = true;
@@ -66,7 +68,7 @@ $('a.closeLink').click( doOverlayClose );
 // close it when closeLink is clicked
 $('#contactButton').click( doOverlayOpen )
 
-$(document).ready(function(){
+$(document).ready(function () {
 	video1src=document.getElementById('video1').getAttribute("src");
 	video2src=document.getElementById('video2').getAttribute("src");
 	video3src=document.getElementById('video3').getAttribute("src");

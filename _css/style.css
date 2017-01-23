@@ -10,7 +10,14 @@ html {
     min-height: 100%;
     font-family: Verdana, Geneva, sans-serif;
 }
+@media screen and (max-device-width: 480px)
+{
+  body{
+    -webkit-text-size-adjust: none;
+  }
+}
 body {
+
     background-image: url(../_image/bg1.jpg);
     background-size: 250px 250px;
     text-align: center;
@@ -81,6 +88,22 @@ body {
     cursor:default;
 }
 
+/*hr with sessors that are randomly placed*/
+hr { 
+  border: 0;
+  border-top: 1px dashed #8c8c8c; 
+  padding-bottom: 4%;
+} 
+.sessor{ 
+  display: inline-block; 
+  position: relative; 
+  top: 20px; 
+  margin-left:-100%;
+  color: #8c8c8c; 
+  font-size: 18px; 
+}
+
+
 .text {
     color: #323232;
     font-size: 14px;
@@ -91,12 +114,18 @@ body {
     font-size:14px;
     color: #EA2466;
     line-height: 21px;
+    cursor:default;
+}
+
+a.pinkText {
+    cursor:pointer;
 }
 
 .midFont{ /*link fout size*/
     font-size:14px;
 }
 
+/*table layout*/
 .topTable {
 	background-color: #FFB8D0;
 	width: 70%;
@@ -148,6 +177,7 @@ body {
     position: absolute;
     bottom: 0;
     left: 10px;
+    top:0;
 }
 
 
@@ -158,6 +188,7 @@ body {
     position: absolute;
     bottom: 0;
     right: 10px;
+        top:0;
 }
 
 .smallTable { /*bright inner table*/
@@ -193,15 +224,14 @@ vertical-align:top;
 
 .textBox /*small text boxes*/
 {	
+    padding-top:2%;
     text-align:left;
-    margin-top:0;
-	margin:auto;
+    margin:0 auto 0 auto;
 	width:80%;
 }
 .textBox2
 {
     padding-top:2%;
-    padding-bottom:2%;
 }
 .textBox3
 {	
@@ -209,6 +239,7 @@ vertical-align:top;
     margin-top:0;
 	margin:auto;
 	width:80%;
+
 }
 /*bioImages*/
 .floatLeft
@@ -227,7 +258,7 @@ vertical-align:top;
 body.noscroll
 {
 	overflow-y:hidden;
-	padding-right:17px;
+	padding:17px;
 }
 
 /*standardized video sizing*/
@@ -241,12 +272,13 @@ body.noscroll
     text-decoration:none;
 	width:80%;
 	height:auto;
-    margin-bottom:6px;
 }
+
+/*when mouseover the image except for IE*/
 .brightness{
     filter: brightness(50%);
 
-} /*when mouseover the image*/
+}
 
 /*used for imageDescription.js*/
 .image-wrapper {
@@ -265,9 +297,10 @@ body.noscroll
     font-size: 20px;
 }
 
-.imageText {display:none;
+.imageText {
+    padding-top:1%;
+    display:none;
 }
 .pad {
-padding-bottom:20px;
-
+        padding-bottom:3%;
 }

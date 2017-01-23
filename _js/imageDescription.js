@@ -6,7 +6,7 @@ $(window).resize(imageShow);
 function imageShow() {
     if ($(window).width() > 800) {
         $('.imageText').css('display', 'none');
-    
+        $(".gallImageSizing").parent().parent().addClass('pad');
     } else if ($(window).width() <= 800) {
         // if use mobile device, use different layout
         $('.imageText').css('display', 'block');

@@ -1,6 +1,6 @@
 ﻿.bgCover { position:fixed; left:0; top:0; display:none; overflow:hidden }
 .list {
-    font-size: 12px; font-family: Verdana, Geneva, sans-serif; color: #fff; line-height: 17px;
+    font-size: 14px; font-family: Verdana, Geneva, sans-serif; color: #fff; line-height: 17px;
 }
 
 .text {
@@ -21,7 +21,7 @@ body {
 .heading {
 	color: #FF6297;
 	font-family: Verdana, Geneva, sans-serif;
-	font-size: large;
+	font-size: 20px;
 	text-align: center;
 	line-height: 30px;
 }
@@ -34,7 +34,7 @@ body {
 .imageSizing_div{
 	margin:auto;
 	width:95%;
-	display:none;
+	/*display:none;*/
 }
 .tinyImageSizing
 {
@@ -43,7 +43,7 @@ body {
 	height:auto;
 }
 
-.textBox
+
 {
     border-style: solid;
 	border-width: 1px;
@@ -78,7 +78,7 @@ body {
 
 ul {
    list-style-type: none;
-   font-size: 12px;
+   font-size: 14px;
    text-indent: -9px;
    color: #fff;
 }
