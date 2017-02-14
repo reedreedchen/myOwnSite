@@ -23,7 +23,7 @@ function translate(){
 		document.getElementById("scripting").innerHTML = "程式設計";
 
 		document.getElementById("demoReelTitle").innerHTML = "作品剪輯";
-		document.getElementById("demoReelContent").innerHTML = "剪輯影片中之作品: <i>天使心靈</i> (<i>Angel's Spirit</i>) (2013), <i>立方貓</i> (<i>Square Cat</i>) (2013), <i>肚子上的怪東西</i> (<i>The Thing on My Belly</i>) (2013), <i>絕望的眼</i> (<i>Eye of Despair</i>)(2014), <i>居家護理模擬訓練</i> (<i>The Home Healthcare Project</i>) (2016)";
+		document.getElementById("demoReelContent").innerHTML = "過去三年間，我在俄亥俄超級電腦中心參與開發<i>居家護理模擬訓練 (The Home Healthcare Project)</i>專案的桌面版本與虛擬實境版本。此專案由美國國家職業安全衛生研究所(NIOSH)贊助。";
 
 		document.getElementById("galleryTitle").innerHTML = "3D創作";
 		document.getElementById("clickPreview").innerHTML = "* 點選預覽圖有更多細節。";
@@ -110,7 +110,7 @@ function translate(){
 
         //reel
 		document.getElementById("demoReelTitle").innerHTML = "Demo Reel";
-		document.getElementById("demoReelContent").innerHTML = "Featured Projects: <i>Angel's Spirit</i> (2013), <i>Square Cat</i> (2013), <i>The Thing on My Belly</i> (2013), <i>Eye of Despair</i> (2014), <i>The Home Healthcare Project</i> (2016)";
+		document.getElementById("demoReelContent").innerHTML = "In the past three years, I participated in developing the desktop version & the VR version of the <i>Home Healthcare Training</i> project at Ohio Supercomputer Center(OSC). This project is funded by The National Institute for Occupational Safety and Health(NIOSH).";
 
         //3d Creation
 		document.getElementById("galleryTitle").innerHTML = "3D Creation";
