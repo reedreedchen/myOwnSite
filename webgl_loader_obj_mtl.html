@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgl - OBJLoader + MTLLoader_test2</title>
+		<title>three.js webgl - OBJLoader + MTLLoader_test3</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<style>
@@ -92,7 +92,7 @@
 				THREE.Loader.Handlers.add( /\.dds$/i, new THREE.DDSLoader() );
 
 				var mtlLoader = new THREE.MTLLoader();
-				mtlLoader.setBaseUrl('_models/');
+				mtlLoader.setTexturePath('_models/catfoodbag.jpg');
 				mtlLoader.setPath( '_models/' );
 				mtlLoader.load( 'catFood.mtl', function( materials ) {
 
