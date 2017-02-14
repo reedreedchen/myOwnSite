@@ -2,11 +2,11 @@
 #
 #
 
-newmtl  Mesh_lambert2SG
+newmtl sock Mesh_lambert2SG
 illum 2
 Ka 5.000000 5.000000 5.000000
 Kd 0.000000 0.000000 0.000000
 Ks 0.000000 0.000000 0.000000
 Ns 0.000000
-map_Kd catfoodbag.jpg
+map_Kd sock.jpg
 
