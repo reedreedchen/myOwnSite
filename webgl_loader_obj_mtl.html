@@ -71,8 +71,12 @@
 				scene.add( ambient );
 
 				var directionalLight = new THREE.DirectionalLight( 0xffeedd );
-				directionalLight.position.set( 0, 0, 1 ).normalize();
+				directionalLight.position.set(0, 0, 1).normalize();
 				scene.add( directionalLight );
+
+				var directionalLight2 = new THREE.DirectionalLight(0xffeedd);
+				directionalLight.position.set(0, 5, 5).normalize();
+				scene.add(directionalLight2);
 
 				// model
 
@@ -88,17 +92,18 @@
 				THREE.Loader.Handlers.add( /\.dds$/i, new THREE.DDSLoader() );
 
 				var mtlLoader = new THREE.MTLLoader();
+				mtlLoader.setBaseUrl('_models/');
 				mtlLoader.setPath( '_models/' );
 				mtlLoader.load( 'catFood.mtl', function( materials ) {
 
 					materials.preload();
 
 					var objLoader = new THREE.OBJLoader();
-					objLoader.setMaterials( materials );
+					objLoader.setMaterials(materials);
 					objLoader.setPath( '_models/' );
 					objLoader.load( 'catFood.obj', function ( object ) {
 
-						object.position.y = - 95;
+						//object.position.y = - 95;
 						scene.add( object );
 
 					}, onProgress, onError );
