@@ -16,13 +16,18 @@ function init() {
 
     // Create the scene and set the scene size.
     scene = new THREE.Scene();
-    var WIDTH = window.innerWidth/2,
-        HEIGHT = window.innerHeight/2;
+    if ($(window).width() >= 1330) {
+        var WIDTH = $(window).width() * 0.7 * 0.8,
+            HEIGHT = WIDTH * 0.562;
+    } else {
+        var WIDTH = $(window).width() * 0.8,
+            HEIGHT = WIDTH * 0.562;
+    }
 
     // Create a renderer and add it to the DOM.
     renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(WIDTH, HEIGHT);
-    document.body.appendChild(renderer.domElement);
+    document.getElementById("3dViewerContainer").appendChild(renderer.domElement);
 
     // Create a camera, zoom it out from the model a bit, and add it to the scene.
     camera = new THREE.PerspectiveCamera(45, WIDTH / HEIGHT, 0.1, 20000);
@@ -31,8 +36,13 @@ function init() {
 
     // Create an event listener that resizes the renderer with the browser window.
     window.addEventListener('resize', function () {
-        var WIDTH = window.innerWidth/2,
-            HEIGHT = window.innerHeight/2;
+        if ($(window).width() >= 1330) {
+            var WIDTH = $(window).width() * 0.7 * 0.8,
+                HEIGHT = WIDTH * 0.562;
+        } else {
+            var WIDTH = $(window).width() * 0.8,
+                HEIGHT = WIDTH * 0.562;
+        }
         renderer.setSize(WIDTH, HEIGHT);
         camera.aspect = WIDTH / HEIGHT;
         camera.updateProjectionMatrix();
