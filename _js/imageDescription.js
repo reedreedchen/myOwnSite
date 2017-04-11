@@ -4,10 +4,10 @@ $(window).ready(imageShow);
 $(window).resize(imageShow);
 
 function imageShow() {
-    if ($(window).width() > 800) {
+    if ($(window).width() > 930) {
         $('.imageText').css('display', 'none');
         $(".gallImageSizing").parent().parent().addClass('pad');
-    } else if ($(window).width() <= 800) {
+    } else if ($(window).width() <= 930) {
         // if use mobile device, use different layout
         $('.imageText').css('display', 'block');
         $(".gallImageSizing").parent().parent().addClass('pad');
@@ -19,7 +19,7 @@ $(function(){$(".gallImageSizing").bind("mouseenter", imageMouseOver);
 });
 
 function imageMouseOver(){
-    if ($(window).width() > 800)
+    if ($(window).width() > 930)
     {
         $(this).parent().parent().addClass('image-wrapper');
         $('.image-wrapper span').css('display', 'block');
@@ -35,7 +35,7 @@ function imageMouseOver(){
 }
 function imageMouseLeave()
 {
-    if ($(window).width() > 800) {
+    if ($(window).width() > 930) {
         $('.image-wrapper span').css('display', 'none');
         $(this).parent().parent().removeClass('image-wrapper');
         if (msieversion() == false) {

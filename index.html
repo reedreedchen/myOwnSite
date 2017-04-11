@@ -6,52 +6,51 @@
 <link href="favicon.ico" rel="shortcut icon" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=0.7, user-scalable=yes"/>
+
 <script type="text/javascript" src="_js/jquery-1.2.6.min.js"></script>
 <script type="text/javascript" src="_js/detectMobile.js"></script>
 <script type="text/javascript" src="_js/tableControl.js"></script>
 <script type="text/javascript" src="_js/imageDescription.js"></script>
 <link rel="stylesheet" href="_css/queryLoader.css" type="text/css" />
-<script type="text/javascript" src="_js/jquery-1.2.6.min.js"></script>
 <script type='text/javascript' src='_js/queryLoader.js'></script>
 <script type='text/javascript' src='_js/randomSessors.js'></script>
-
 <link rel="stylesheet" href="_css/style.css" />
 <title>Renee Home</title>
 </head>
 <body>
-
+<div id="blackScreen" class="blackScreen"></div>
 
 <!--pop up starts-->
 <div class="overlayBox">
 	<div class="overlayContent"><div class="iframeRound">
-                    <iframe name="someFrame" id="iframe" src="javascript:void(0)"></iframe><br/>
-    <div id="closeLinkBackground" style="background-color: black; width:100%; margin:auto;"><a href="javascript:void(0)" id="closeLink" class="closeLink">Close</a></div>
-    </div>
+	<iframe name="someFrame" id="iframe" src="javascript:void(0)"></iframe><br/>
+	<div id="closeLinkBackground" style="background-color: black; width:100%; margin:auto;"><a href="javascript:void(0)" id="closeLink" class="closeLink">Close</a></div>
+	</div>
 	</div>
 </div>
 <!--pop up ends-->
-    <table class="topTable" id="topTable">
+	<table class="topTable" id="topTable">
 		<tr>
 		<td>
-		<div class="name" id="name"><span class="heading">Renee Chen</span> <span class="text midFont" id="interactiveDesigner">Interactive Designer</span></div>
-                <div class="links" id="links"><span class="text midFont">[<a class="pinkText midFont" id="bio" href="javascript:void(0)">Bio</a> | 
-                    <a class="pinkText midFont" id="demoReel" href="javascript:void(0)">Demo Reel</a> | 
-                    <a class="pinkText midFont" id="scripting" href="javascript:void(0)">Scripting</a> | 
-                    <a class="pinkText midFont" id="animation" href="javascript:void(0)">Animation</a> | 
-                    <a class="pinkText midFont" id="gallery" href="javascript:void(0)">3D Creation</a> | 
-                    <a class="pinkText midFont" id="designOther" href="javascript:void(0)">Visualization</a> | 
-                    <a class="pinkText midFont" id="publication" href="javascript:void(0)">Publication</a>]</span></div>
+		<div class="name" id="name"><span class="heading">Renee Chen</span> <span class="text midFont" id="csDeveloper">C#, Unity Develoepr</span></div>
+				<div class="links" id="links"><span class="text midFont">[<a class="pinkText midFont" id="bio" href="javascript:void(0)">Bio</a> | 
+					<a class="pinkText midFont" id="demoReel" href="javascript:void(0)">Demo Reel</a> | 
+					<a class="pinkText midFont" id="scripting" href="javascript:void(0)">Scripting</a> | 
+					<a class="pinkText midFont" id="animation" href="javascript:void(0)">Animation</a> | 
+					<a class="pinkText midFont" id="gallery" href="javascript:void(0)">3D Creation</a> | 
+					<a class="pinkText midFont" id="designOther" href="javascript:void(0)">Visualization</a> | 
+					<a class="pinkText midFont" id="publication" href="javascript:void(0)">Publication</a>]</span></div>
 		  </td>
-	    </tr>
+		</tr>
 	  </table>
 
 <!--Demo Reel starts-->
 <table class="smallTable" id="demoReelTable">
-            		<tr>
-          	 		<td><p id="demoReelTitle" class="heading">Demo Reel</p>
-            		<iframe src="https://player.vimeo.com/video/203766617"  frameborder="0" class="videoSizing" id="video1" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen"></iframe>
-            		<div class="textBox"><span id="demoReelContent" class="text">In the past three years, I participated in developing the desktop version & the VR version of the <i>Home Healthcare Training</i> project at Ohio Supercomputer Center(OSC). This project is funded by The National Institute for Occupational Safety and Health(NIOSH).</span>
-           		 </div></td>
+					<tr>
+					<td><p id="demoReelTitle" class="heading">Demo Reel</p>
+					<iframe src="https://player.vimeo.com/video/203766617"  frameborder="0" class="videoSizingDemo" id="video1" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen"></iframe>
+					<div class="textBox"><span id="demoReelContent" class="text">I participated in developing the desktop version & the VR version of the <i>Home Healthcare Training</i> project at Ohio Supercomputer Center(OSC). This project is funded by The National Institute for Occupational Safety and Health(NIOSH).</span>
+				 </div></td>
 		</tr>
 	  </table>
 <!--Demo Reel ends-->
@@ -70,14 +69,11 @@
 <!--research starts-->
 <table class="smallTable" id="researchTable"><tr><td>
 <p id="research" class="heading">Publication</p>
-<div class="textBox">
-<p class="text"><span id="author">First Author:</span><br />"<a href="https://etd.ohiolink.edu/pg_10?0::NO:10:P10_ACCESSION_NUM:osu1461270639" class="pinkText" onclick="window.open('https://etd.ohiolink.edu/pg_10?0::NO:10:P10_ACCESSION_NUM:osu1461270639', 'newwindow', 'width=700, height=500, resizable=yes');return false;" id="research1"><i>Autoethnographic Research through Storytelling in Animation and Video Games</i></a>"
-        Renee Chen, Susan Melsop (Advisor).
-       The Ohio State University. 2016. 132 pages.</p>
-    <p class="text"><span id="author1">Credited for Game Development:</span><br />"<a href="http://www.nursingsimulation.org/article/S1876-1399(16)30013-5/abstract" class="pinkText" onclick="window.open('http://www.nursingsimulation.org/article/S1876-1399(16)30013-5/abstract', 'newwindow', 'width=700, height=500, resizable=yes');return false;" id="research2"><i>Gaming Simulation as Health and Safety Training for Home Health Care Workers</i></a>"
-        Amy R. Darragh, Steve Lavender, Barbara Polivka, Carolyn M. Sommerich, Celia E. Wills, Bradley A. Hittle, Renee
+<div class="textBox1">
+	<p class="text">"<a href="http://www.nursingsimulation.org/article/S1876-1399(16)30013-5/abstract" class="pinkText" onclick="window.open('http://www.nursingsimulation.org/article/S1876-1399(16)30013-5/abstract', 'newwindow', 'width=700, height=500, resizable=yes');return false;" id="research2"><i>Gaming Simulation as Health and Safety Training for Home Health Care Workers</i></a>"
+		Amy R. Darragh, Steve Lavender, Barbara Polivka, Carolyn M. Sommerich, Celia E. Wills, Bradley A. Hittle, Renee
 Chen, Donald L. Stredney. Clinical Simulation in Nursing Vol. 12, 2016, pp 328-335.
-        </p>
+		</p>
 </div>
 <td><tr></table>
 <!--research ends-->
@@ -85,12 +81,14 @@ Chen, Donald L. Stredney. Clinical Simulation in Nursing Vol. 12, 2016, pp 328-3
 <!--bio starts-->
 <table class="smallTable" id="bioTable"><tr><td>
 <p id="bioTitle" class="heading">Bio</p>
-  <div style="width:95%; margin:auto; text-align:left">
-        <p class="text"><img alt="reneePhoto" src="_image/BioPic.jpg" width="224" height="224" class="floatLeft" /><span id="p1">Renee Chia-Lei Chen is fulfilling a lifelong passion by becoming an interactive designer. In 2011, she completed her Bachelor of Science degree in Multimedia and Game Science at Lunghwa University of Science and Technology in Taiwan. She continued to strive for excellence in design capabilities and technical expertise by pursuing graduate studies. She graduated from the Ohio State University in 2016 with a Master of Fine Arts in Digital Animation and Interactive Media.</span></p>
-        <p class="text"><span id="p2">Renee also studied social psychology, gender studies, and languages in addition to design and technical studies. She firmly believes that video games and animation tell a story about human experience in addition to providing entertainment. </span><span id="p3" >She has depth as a storytelling researcher and artist by combining her educational knowledge and wisdom from personal struggles into her work. She creates depth exploring all sides of an issue in order to clarify and seek resolution. She understands that people each have unique lives and unspoken tragedies. She strives to make video games entertaining also with action, black humor and heartbreak. Some of her own favorite games are <i>We Heart Katamari</i>, <i>The Sims 3</i>, <i>World of Warcraft</i>, <i>Life is Strange</i>, <i>Skyrim</i>, and <i>Tomb Raider</i>.</span></p>
-      <p class="text" id="p4">When Renee was in graduate school, she served as a Graduate Research Associate at Interface Lab in Ohio Supercomputer Center. She collaborated with many researchers and software engineers to produce virtual simulation for healthcare training. Under supervision she worked on UI, modeling, texturing, integration, and optimization. Renee is now ready to begin her career and offer her many talents. She currently resides in Columbus Ohio along with her dog Emma where she enjoys relaxing with friends and attending the pug meetup group.</p>
+  <div class="textBox1">
+		<div class="text">
+			<div class="floatLeft" style="text-align:center"><img alt="reneePhoto" src="_image/BioPic.jpg" width="175" height="263" /><br/><span id="bioTag">Renee and Emma</span></div>
+			<span id="p1">Renee is a software developer and has a lifelong passion in interaction design. In 2011, she completed her Bachelor of Science degree in Multimedia and Game Science at Lunghwa University of Science and Technology in Taiwan. She continued to strive for excellence in interactive design by pursuing graduate studies. She graduated from the Ohio State University in 2016 with a Master of Fine Arts in Digital Animation and Interactive Media.</span>
+		</div>
+		<p class="text"><span id="p2">Renee’s expertise in interaction design is not limited to technology. She also studied arts, social psychology, gender studies, and languages in addition to technical studies. She firmly believes that interactive design cannot be separated from human experience. She has depth as an interaction designer and software developer by combining her educational knowledge and research experience into her work. She explores multiple aspects of an issue to clarify and seek resolution for her clients.</span></p>
+	  <p class="text" id="p3">In recent years, she worked at ACCAD, the Interface Lab of OSC, and AEP. She has collaborated with professionals in many different disciplines and other software engineers to produce software for research, education, career training, and commercial use. She has extensive experience working on UI, integration, data management, and optimization. She is currently a software consultant and is providing solutions regarding mobile application development, web application development, and computer game development.</p>
   </div>
-                <p id="resumeLink"><a href="ResumeReneeChen_011717_7.pdf" target="someFrame" class="launchLink" id="resume">See Resume</a></p>
 </td></tr></table>
 <!--bio ends-->
 
@@ -98,21 +96,18 @@ Chen, Donald L. Stredney. Clinical Simulation in Nursing Vol. 12, 2016, pp 328-3
 <table class="smallTable" id="galleryTable"><tr><td>
 <div style="text-align:center">
 <p class="heading" id="galleryTitle">3D Creation</p>
-
-    <p class="text" id="clickPreview">* Click on the images for details.</p>
-     
-      <div><a href="_darkboards/nioshRendering.html" target="someFrame" class="launchLink">
-        <img id="gallElement" class="gallImageSizing" src="_image/assess_render__0000.jpg" alt="Real Time Rendering-Home Healthcare" /></a><br />
-         <div class="textBox3"><span class="text imageText" id="3DCreation1">Real Time Rendering-<i>Home Healthcare</i> - 5 images</span></div></div>
-     
-      <div><a href="_darkboards/UI.html" target="someFrame" class="launchLink">
-        <img class="gallImageSizing" src="_image/home1.jpg" alt="UI Design-Home Healthcare" /></a><br />
-        <div class="textBox3"><span class="text imageText" style="display:none" id="3DCreation2">UI Design-<i>Home Healthcare</i> - 3 images</span></div></div>
-      <div><a href="_darkboards/nioshImages.html" target="someFrame" class="launchLink">
-        <img class="gallImageSizing" alt="Environment-Home Healthcare" src="_image/home2.jpg" /></a><br />
+	<p class="text" id="clickPreview">* Click on the images for details.</p>
+	  <div><a href="_darkboards/nioshRendering.html" target="someFrame" class="launchLink">
+		<img id="gallElement" class="gallImageSizing" src="_image/assess_render__0000.jpg" alt="Real Time Rendering-Home Healthcare" /></a><br />
+		 <div class="textBox3"><span class="text imageText" id="3DCreation1">Real Time Rendering-<i>Home Healthcare</i> - 5 images</span></div></div>
+	  <div><a href="_darkboards/UI.html" target="someFrame" class="launchLink">
+		<img class="gallImageSizing" src="_image/home1.jpg" alt="UI Design-Home Healthcare" /></a><br />
+		<div class="textBox3"><span class="text imageText" style="display:none" id="3DCreation2">UI Design-<i>Home Healthcare</i> - 3 images</span></div></div>
+	  <div><a href="_darkboards/nioshImages.html" target="someFrame" class="launchLink">
+		<img class="gallImageSizing" alt="Environment-Home Healthcare" src="_image/home2.jpg" /></a><br />
  <div class="textBox3"><span class="text imageText" style="display:none" id="3DCreation3">Environment-<i>Home Healthcare</i> - 8 images</span></div></div>
-      <div><a href="_darkboards/modelling.html" target="someFrame" class="launchLink">
-        <img class="gallImageSizing" alt="Character-Mom in the Box" src="_image/mom01.jpg" /></a><br />
+	  <div><a href="_darkboards/modelling.html" target="someFrame" class="launchLink">
+		<img class="gallImageSizing" alt="Character-Mom in the Box" src="_image/mom01.jpg" /></a><br />
   <div class="textBox3"><span class="text imageText" style="display:none" id="3DCreation4">Character-<i>Mom in the Box</i> - 14 images</span></div></div></div>
 </td></tr></table>
 <!--3d creation ends-->
@@ -121,16 +116,16 @@ Chen, Donald L. Stredney. Clinical Simulation in Nursing Vol. 12, 2016, pp 328-3
 <table class="smallTable" id="designTable"><tr><td>
 <div style="text-align:center">
 <p class="heading" id="other">Visualization</p>
-        <p class="text imageText" id="clickPreview1">* Click on the images for details.</p>
+		<p class="text imageText" id="clickPreview1">* Click on the images for details.</p>
 
-     <div><a href="_darkboards/swss.html" target="someFrame" class="launchLink"><img class="gallImageSizing" src="_image/W_beginningScenes60000.jpg" alt="Flash, Graphic Design-SWSS" /></a><br />
-      <div class="textBox3"><span class="text imageText" style="display:none" id="other3">Flash, Graphic Design-<i>SWSS</i> - 10 images</span></div></div>
+	 <div><a href="_darkboards/swss.html" target="someFrame" class="launchLink"><img class="gallImageSizing" src="_image/W_beginningScenes60000.jpg" alt="Flash, Graphic Design-SWSS" /></a><br />
+	  <div class="textBox3"><span class="text imageText" style="display:none" id="other3">Flash, Graphic Design-<i>SWSS</i> - 10 images</span></div></div>
 
  <div><a href="_darkboards/two.html" target="someFrame" class="launchLink"><img class="gallImageSizing" src="_image/two_small.jpg" alt="Data Visualization-Two" /></a><br />
   <div class="textBox3"><span class="text imageText" style="display:none" id="other2">Data Visualization-<i>TWO</i> - 4 images</span></div></div>
 
   <div><a href="_darkboards/forsaken.html" target="someFrame" class="launchLink"><img class="gallImageSizing" src="_image/level_small.jpg" alt="Level Design-Forsaken" /></a><br />
-      <div class="textBox3"><span class="text imageText" style="display:none" id="other1">Level Design-<i>Forsaken</i> - 3 images</span></div></div>
+	  <div class="textBox3"><span class="text imageText" style="display:none" id="other1">Level Design-<i>Forsaken</i> - 3 images</span></div></div>
 
 </div>
 </td></tr></table>
@@ -138,65 +133,62 @@ Chen, Donald L. Stredney. Clinical Simulation in Nursing Vol. 12, 2016, pp 328-3
 
 <!--Animation starts-->
 <table class="smallTable" id="animationTable">
-   	    <tr>
-                <td>
-                	<p class="heading" id="animationTitle">Animation</p>
+		<tr>
+				<td>
+					<p class="heading" id="animationTitle">Animation</p>
 
-               	  <iframe src="https://player.vimeo.com/video/75807833" frameborder="0" class="videoSizing" id="video2" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen"></iframe>
+				  <iframe src="https://player.vimeo.com/video/75807833" frameborder="0" class="videoSizing" id="video2" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen"></iframe>
 
 	<!--adventure comedy starts-->
   <div class="textBox2"><span class="text" id="collaborative">Collaborative work with<br/>Xiaoshu Wang and Shumeng Zhao</span></div>
-                    	<div class="textBox">
-                          	<span class="pinkText" id="vimeo1"><i>Adventure Comedy</i> </span><span class="text" id="vimeo1_explain">expresses our imagination based off of the music written by Steve Samler. Following the  beat of the music, a girl starts a fantastic adventure.</span>
-                    	</div>
-                 <div class="sessor">✂</div><hr />
+						<div class="textBox">
+							<span class="pinkText" id="vimeo1"><i>Adventure Comedy</i> </span><span class="text" id="vimeo1_explain">expresses our imagination based off of the music written by Steve Samler. Following the  beat of the music, a girl starts a fantastic adventure.</span>
+						</div>
+				 <div class="sessor">✂</div><hr />
 	<!--the thing on my belly starts-->
-                   <iframe src="https://player.vimeo.com/video/74166581" frameborder="0" class="videoSizing" id="video3" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen"></iframe>
+				   <iframe src="https://player.vimeo.com/video/74166581" frameborder="0" class="videoSizing" id="video3" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen"></iframe>
 				  <div class="textBox"><span class="pinkText" id="vimeo2"><i>The Thing on My Belly</i></span><span class="text" id="vimeo2_explain"> discusses identity issues many people are dealing with.</span></div>
 					<div class="sessor">✂</div><hr />
 	<!--square cat starts-->
 					  <iframe  src="https://player.vimeo.com/video/64598636"   frameborder="0" class="videoSizing" id="video4" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen"></iframe><br>
-                    	<div class="textBox"><span class="pinkText" id="vimeo3"><i>Square Cat</i></span> <span class="text" id="vimeo3_explain">is a stylized 3D animation that addresses my thinking about feelings of isolation and not fitting in. The visual style is inspired by the game<i> Sushi Cat </i>(Armor Games). [</span><a href="_darkboards/squareCat.html" target="someFrame" class="launchLink" id="vimeo_board1">storyboard</a><span class="text">]<br /></span>
-                </div>
-                   	  <div class="sessor">✂</div><hr />
+						<div class="textBox"><span class="pinkText" id="vimeo3"><i>Square Cat</i></span> <span class="text" id="vimeo3_explain">is a stylized 3D animation that addresses my thinking about feelings of isolation and not fitting in. The visual style is inspired by the game<i> Sushi Cat </i>(Armor Games). [</span><a href="_darkboards/squareCat.html" target="someFrame" class="launchLink" id="vimeo_board1">storyboard</a><span class="text">]<br /></span>
+				</div>
+					  <div class="sessor">✂</div><hr />
 	<!--the buried unicorn starts-->
-				  <iframe src="https://player.vimeo.com/video/58855208"frameborder="0" class="videoSizing" id="video5" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen"></iframe>
+				  <iframe src="https://player.vimeo.com/video/58855208" frameborder="0" class="videoSizing" id="video5" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen"></iframe>
 						<div class="textBox"><span class="pinkText" id="vimeo4"><i>The Buried Unicorn</i> </span><span class="text" id="vimeo4_explain">demonstrates the stress of tuition in a humorous but slightly dark way. [</span><a href="_darkboards/unicorn_storyboard.html" target="someFrame" class="launchLink" id="vimeo_board2">storyboard</a><span class=text>]</span></div>
 					  <div class="sessor">✂</div><hr />
 	<!--angel's spirit starts-->
-                   	 <iframe src="https://player.vimeo.com/video/93031385" frameborder="0" class="videoSizing" id="video6" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen"></iframe><br>
+					 <iframe src="https://player.vimeo.com/video/93031385" frameborder="0" class="videoSizing" id="video6" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen"></iframe><br>
 						<div class="textBox"><span class="pinkText" id="vimeo5"><i>Angel's Spirit</i></span><span class="text" id="vimeo5_explain"> explains my perspective about what causes people to become evil -- the environmental factors. I believe that not all individuals are to blame. This video demostrates the first part of the full story. [</span><a href="_darkboards/angel_storyboard.html" target="someFrame" class="launchLink" id="vimeo_board3">storyboard</a><span class="text">]</span></div>
 
-       	  </td>
-        </tr>
+		  </td>
+		</tr>
 	  </table>
 <!--Animation ends-->
 
 <!--footer starts-->
 <table class="footerTable" id="footerTable">
-        <tr>
-        <td>
-        	 <div class="footerDiv">
-                 <div class="footerName"id="footerName">
-                     <span class="text">© Renee Chen 2013 - 2017</span></div>
-              <div class="footerLinks" id="footerLinks"><span class="text">[<a href="javascript:void(0)" class="switchLanguage" id="languageButton" lang="zh-Hant-TW">-> 繁體中文</a> | 
-<a href="_darkboards/legalStatus.html" target="someFrame" class="launchLink" id="legalStatues">Legal Status FAQ</a> | 
+		<tr>
+		<td>
+			 <div class="footerDiv">
+				 <div class="footerName" id="footerName">
+					 <span class="text">© Renee Chen 2013 - 2017</span></div>
+			  <div class="footerLinks" id="footerLinks"><span class="text">[<a href="javascript:void(0)" class="switchLanguage" id="languageButton" lang="zh-Hant-TW">-> 繁體中文</a> | 
 <a href="_darkboards/thisSite.html" target="someFrame" class="launchLink" id="thisSite">Update Log</a> | 
 <a href="_darkboards/messageBoard.html" target="someFrame" class="launchLink" id="messageBoard">Message Board</a>]</span>
 
-              </div>
+			  </div>
 
-        	</div>
-        </td>
-        </tr>
-      </table>
+			</div>
+		</td>
+		</tr>
+	  </table>
 <!--footer ends-->
-
-<script type="text/javascript" src="_js/zh_tw.js"></script>
 <script type="text/javascript" src="_js/openWindow.js"></script>
+<script type="text/javascript" src="_js/zh_tw.js"></script>
+<script type='text/javascript'>QueryLoader.init();</script>
 <script type="text/javascript">localStorage.setItem ('lang', currentLang);</script>
-<script type='text/javascript'>
-    QueryLoader.init();
-</script>
+
 </body>
 </html>

@@ -1,16 +1,16 @@
 
 function detectMobile()
 {
-
+/*
     if ($(window).width() <= 800)
     {
         document.getElementById('resume').setAttribute("href", "resumeMobile.html");
     }
     else
     {
-        document.getElementById('resume').setAttribute("href", "ResumeReneeChen_011717_7.pdf");
+        document.getElementById('resume').setAttribute("href", "ResumeReneeChen.pdf");
     }
-
+*/
 
     if ($(window).width() <= 1330 ) {
         $(".smallTable").css('width', '100%');

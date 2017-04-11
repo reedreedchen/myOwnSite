@@ -4,7 +4,6 @@
 //by Renee Chia-Lei Chen 12/7/2016
 var currentID = "demoReel";
 var newVideoWidth;
-var newVideoHeight;
 function hideTable() 
 {
     $('#demoReelTable').hide(); document.getElementById("demoReel").setAttribute("href","javascript:void(0)");
@@ -118,16 +117,18 @@ $(document).ready(function () {
 
 //window resizing for vimeo
 $(window).resize(resize);
+
 function resize() {
     if ($(window).width() >= 1330)
-        newVideoWidth = $(window).width() * 0.7 * 0.8; //0.7 is the width of .smalltable which is 70% relative to screen size. 0.8 is 80% relative to smalltable.
-    else newVideoWidth = $(window).width() * 0.8;
-    newVideoHeight = newVideoWidth * 0.562;
+        newVideoWidth = $('#topTable').width() * 0.8; //0.7 is the width of .smalltable which is 70% relative to screen size. 0.8 is 80% relative to smalltable.
+    else newVideoWidth = $('#topTable').width() * 0.78 //window width isn't correct when mobile devices change orientations for unknown reasons.
     reassignVideoSizing();
     $('.smallTable').css("height", window.innerHeight - $('.topTable').innerHeight() - $('.footerTable').innerHeight());
 }
 
 function reassignVideoSizing() {
     $('.videoSizing').css('width', newVideoWidth);
-    $('.videoSizing').css('height', newVideoHeight);
+    $('.videoSizing').css('height', newVideoWidth * 0.562);
+    $('.videoSizingDemo').css('width', newVideoWidth);
+    $('.videoSizingDemo').css('height', newVideoWidth * 0.531);
 }
